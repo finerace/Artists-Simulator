@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eac25633d034c2999bc64aa605db4c8, type: 3}
+  m_Name: AssetsPathsConfig
+  m_EditorClassIdentifier: 
+  BOOT_SCENE_ID: 0
+  MAIN_SCENE_ID: 1
+  LOADING_MENU_ID: LoadingScreen
+  MAIN_MENU_ID: MainMenu
+  SETTINGS_MENU_ID: SettingsMenu
+  CUSTOMISATION_MENU_ID: ArtistsCustomisationMenu
+  IMPROVEMENT_MENU_ID: ImprovementMenu
+  DONATE_MENU_ID: DonateMenu
+  LOCATION_IMPROVE_MENU_ID: LocationCustomisationMenu
+  DIFFICULTY_SWITCH_MENU_ID: DifficultySwithMenu
+  GAME_PLAY_MENU_ID: GamePlayMenu
+  ENEMY_SEARCH_MENU_ID: EnemySearchMenu
+  LEVEL_BONUSES_MENU_ID: LevelBonusesMenu
+  MAIN_LOCATION_ID: MainLocation
+  POPUP_WINDOW_ID: PopupWindow
+  customisationMenuShopCellID: ShopCell
+  MALE_CHARACTER_ID: Boy1
+  FEMALE_CHARACTER_ID: Girl1
+  MAIN_CAMERA_NAME: MainCamera
+  CANVAS_CAMERA_NAME: CanvasCamera
+  PAINT_PATH_RENDERER_ID: PaintPathRenderers
+  popupInformationIcon: {fileID: 21300000, guid: 99af2bff10c62b54ba24296e214c5f4c,
+    type: 3}
+  popupErrorIcon: {fileID: 21300000, guid: d8f41c80a5bd2c84a8318f29ffc49882, type: 3}
+  popupInsufficientFundsIcon: {fileID: 21300000, guid: 191cdc9f404ef1d4bb0532737e4a238d,
+    type: 3}
+  saveDebounceDelay: 0.1
+  saveMaxDelay: 1

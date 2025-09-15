@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7591cc441bc73c2498b11fd0a844cfa8, type: 3}
+  m_Name: 1Boy
+  m_EditorClassIdentifier: 
+  templateId: Boy1
+  characterGender: 0
+  customizationSlots:
+  - {fileID: 11400000, guid: e431dba27d9048b4099d07e8a260ef42, type: 2}
+  - {fileID: 11400000, guid: d05da98a854ea52408fb5ec995a6ce1b, type: 2}
+  - {fileID: 11400000, guid: 399f5f5f8ad953d45a4bdf4f0d43ff43, type: 2}
+  - {fileID: 11400000, guid: 85f52f8644c2beb429368d7be88a87b0, type: 2}
+  - {fileID: 11400000, guid: 9483386e9b2aec04a81eddfce3f9c813, type: 2}
+  - {fileID: 11400000, guid: ed8d9278bf71e404cb194f683c17d2f0, type: 2}
+  - {fileID: 11400000, guid: b32bee6937a1c0c4b99b76e6dbc0be3c, type: 2}
+  - {fileID: 11400000, guid: dfdc99f6dd3e5864b8edd19e98ebbad4, type: 2}
+  - {fileID: 11400000, guid: 9e2a1bc657745db49bdafd30dea9cca6, type: 2}
+  characterModelAddressableId: Boy1
+  defaultItemsList:
+  - slotId: Hair
+    item: {fileID: 11400000, guid: ed16de7a63e44af4095dc44e1c56bc09, type: 2}
+  - slotId: Eye
+    item: {fileID: 11400000, guid: 84991d3897dde6446961ac220d47b32c, type: 2}
+  - slotId: Mouth
+    item: {fileID: 11400000, guid: 35885ff7b660ac14596ff7fbcb728d0c, type: 2}
+  - slotId: BodySkin
+    item: {fileID: 11400000, guid: e3517ce6ca280a448af449ae903af1f4, type: 2}
+  - slotId: Skin
+    item: {fileID: 11400000, guid: 67619ab792e282b40929c277881c16c5, type: 2}
+  - slotId: BodyCloth
+    item: {fileID: 11400000, guid: a475dfcc1e74c8940a6985b9ca04dff7, type: 2}

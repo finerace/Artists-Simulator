@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4842ab34384f03b438603ecf30eb0ce9, type: 3}
+  m_Name: PartyGlasses
+  m_EditorClassIdentifier: 
+  itemId: PGlPack
+  slotId: 
+  itemNameId: 0
+  itemDescId: 0
+  isItemsPack: 1
+  itemsPack:
+  - {fileID: 11400000, guid: 3cc90c4650874234ca9f039afabbbc47, type: 2}
+  - {fileID: 11400000, guid: ffa0071470b25e943b1481af5fe4e4f4, type: 2}
+  - {fileID: 11400000, guid: ba8c52872f64da5489f1dfbe0a894519, type: 2}
+  - {fileID: 11400000, guid: 2761b0e27753aba439b281f120ee6799, type: 2}
+  itemType: 1
+  itemIsAlwaysUnlocked: 0
+  coinsPrice: 250
+  crystalsPrice: 0
+  characterGender: 2
+  isCanColorize: 0
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  colorizeCoinsPrice: 100
+  itemObjectAddressableId: 
+  itemMaterial: {fileID: 0}
+  isIconObject: 0
+  iconObjectScale: 1
+  iconObjectLocalPos: {x: 0, y: 0, z: 0}
+  iconColor: {r: 0.5429935, g: 0.8490566, b: 0.28435388, a: 1}
+  itemIcon: {fileID: 2800000, guid: 03bd6c059888f324886efc585e181a76, type: 3}

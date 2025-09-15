@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: UI
+  m_EditorClassIdentifier: 
+  m_GroupName: UI
+  m_GUID: 664b052536cf2044197a207c39fc0fe2
+  m_SerializeEntries:
+  - m_GUID: 16759a2d6f7dae04989dae8b17bae652
+    m_Address: PopupWindow
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Menu
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2531a18b84c8d4448b247d0ec5676431
+    m_Address: ImprovementMenu
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Menu
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3d1b52819214666469765a2203d13c69
+    m_Address: LocationCustomisationMenu
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Menu
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 43dbe296ea3f53948a01a1ff5789d0e8
+    m_Address: ArtistsCustomisationMenu
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Menu
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4acda30eebc84ae49af12dbdfe0b3f54
+    m_Address: EnemySearchMenu
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Menu
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4e278f1375f92c542a80b1117c16515d
+    m_Address: SettingsMenu
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Menu
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6dd91fc206ff445469e0b7f9327f0966
+    m_Address: LevelBonusesMenu
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Menu
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8404e0fae1eb95d4c943f67eb9326504
+    m_Address: DifficultySwithMenu
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Menu
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b5a0d7765f8c295438d52751149d107b
+    m_Address: GamePlayMenu
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Menu
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: befb42478ba5de043bbf660f93ca144a
+    m_Address: MainMenu
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Menu
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c43c0ecdd6d3a7d47ab032a648a7c9df
+    m_Address: LoadingScreen
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Menu
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: de25ae56fe5e21a4f8208cd91062e665
+    m_Address: ShopCell
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Menu
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e3c8f721c1a535d4bbbd0550311d3f4f
+    m_Address: DonateMenu
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Menu
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 067094986c29bff43bef12aab0f2eb4b, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 7681c6f0f191c6842b3480003b8dec3c, type: 2}
+    - {fileID: 11400000, guid: a786602c67570864c824f10f6ca3776b, type: 2}

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4842ab34384f03b438603ecf30eb0ce9, type: 3}
+  m_Name: MilitaryBackpack
+  m_EditorClassIdentifier: 
+  itemId: MilitaryBpck
+  slotId: Body
+  itemNameId: 0
+  itemDescId: 0
+  isItemsPack: 0
+  itemsPack: []
+  itemType: 0
+  itemIsAlwaysUnlocked: 0
+  coinsPrice: 500
+  crystalsPrice: 0
+  characterGender: 2
+  isCanColorize: 0
+  defaultColor: {r: 0.9137255, g: 0.2627451, b: 0.3084976, a: 1}
+  colorizeCoinsPrice: 50
+  itemObjectAddressableId: MilitaryBackpack
+  itemMaterial: {fileID: 0}
+  isIconObject: 1
+  iconObjectScale: 1
+  iconObjectLocalPos: {x: 0, y: 0, z: 0}
+  itemIcon: {fileID: 0}

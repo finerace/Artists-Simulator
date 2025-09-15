@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83763170d1e040568a63a097e3903c0c, type: 3}
+  m_Name: PaintSystemConfig
+  m_EditorClassIdentifier: 
+  paintRaycastDistance: 10
+  textureSizeX: 255
+  textureSizeY: 230
+  paintDiameter: 20
+  paintRateCof: 1.6
+  scaleXCof: 2
+  scaleYCof: 4
+  minPaintMove: 1
+  startTextureColor: {r: 1, g: 1, b: 1, a: 1}
+  gradientChangeSpeed: 0.001
+  commonColorGradient:
+    serializedVersion: 2
+    key0: {r: 1, g: 0.25206608, b: 0.25206608, a: 0.19607843}
+    key1: {r: 1, g: 0.5969817, b: 0.25, a: 0.19607843}
+    key2: {r: 1, g: 0.86035883, b: 0.25098038, a: 0}
+    key3: {r: 0.5049756, g: 1, b: 0.25098038, a: 0}
+    key4: {r: 0.25, g: 1, b: 0.7088235, a: 0}
+    key5: {r: 0.25, g: 0.77352965, b: 1, a: 0}
+    key6: {r: 0.5911766, g: 0.25, b: 1, a: 0}
+    key7: {r: 1, g: 0.2509804, b: 0.2509804, a: 0}
+    ctime0: 1157
+    ctime1: 10023
+    ctime2: 19468
+    ctime3: 28913
+    ctime4: 38936
+    ctime5: 47802
+    ctime6: 55898
+    ctime7: 65535
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 8
+    m_NumAlphaKeys: 2
+  paintPathData:
+  - {fileID: 11400000, guid: d1cbf695aa3e8c04688462a93f9411b5, type: 2}
+  - {fileID: 11400000, guid: 16b14e38ac52d3547ba0645e4341dfb4, type: 2}
+  - {fileID: 11400000, guid: 78c190f116b51254ebf17356aa676a33, type: 2}
+  - {fileID: 11400000, guid: 1f2f029cea837794aaa32230c13de21a, type: 2}
+  - {fileID: 11400000, guid: 3108cc56bd761b44288486eb8479d23e, type: 2}
+  - {fileID: 11400000, guid: 634a7b04f455d264ebee4b82770c26a5, type: 2}
+  - {fileID: 11400000, guid: 99fe642bb3a26314ba8257c4bacfd83a, type: 2}
+  - {fileID: 11400000, guid: 2852dd3ca7684d84daee9a78ed5ad912, type: 2}
+  - {fileID: 11400000, guid: f2c21161abada6d438d596f13a3686aa, type: 2}
+  - {fileID: 11400000, guid: b9494ca339fec234393571289690fd0a, type: 2}
+  - {fileID: 11400000, guid: 51dc700001921c24b9c17b687bf491f5, type: 2}
+  - {fileID: 11400000, guid: e7e9a37f8d3afdd40b3d16c7a2c7e31d, type: 2}
+  - {fileID: 11400000, guid: 02ddd010fe0d0474391f2178bccf8303, type: 2}
+  - {fileID: 11400000, guid: 75df5060a838cfb42a74c93b0caeba22, type: 2}
+  - {fileID: 11400000, guid: 1aa01c546faefbc41a8047208833202a, type: 2}
+  - {fileID: 11400000, guid: e7f160bc4d04f634e874206a144e01a0, type: 2}
+  - {fileID: 11400000, guid: c84fa1f58a2d70446a7874aca9f55e7b, type: 2}
+  - {fileID: 11400000, guid: 4e44fdfa3feb5dc489b370b008501ae5, type: 2}
+  - {fileID: 11400000, guid: b559217ad4f33704cafa82b844ddac73, type: 2}
+  - {fileID: 11400000, guid: b052df9e18b2c37429a6d589601c0214, type: 2}
+  paintPointsRegDistance: 0.05
+  maxAccuracyDistance: 0.3
+  closePathMultiplier: 1
+  maxScorePerPoint: 1
+  maxScorePerUnitLightMode: 7
+  maxScorePerUnitHardMode: 7
+  pathAccuracy: 50
+  farPenaltyMultiplier: 2
+  progressMoveSpeed: 1.25
+  minDotProductThreshold: 0
+  minScoreThreshold: 0
+  lightModeScoreMultiplier: 0.55
+  startPaintCooldown: 0.15
+  brushBackTime: 3
+  brushMoveAnimationTime: 0.15
+  rotationNormalPower: 2
+  brushDistanceMoveAnimationTime: 1
+  brushMoveAnimationEase: 9
+  brushRotationAnimationEase: 34
+  dragBaseSensitivity: 0.5
+  dragDampeningFactor: 0.997
+  maxAccelerationRate: 0.5
+  speedResistanceCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  lineRendererFadeInDuration: 0.1
+  lineRendererFadeOutDuration: 0.1
+  lineRendererFadeInEase: 5
+  lineRendererFadeOutEase: 6

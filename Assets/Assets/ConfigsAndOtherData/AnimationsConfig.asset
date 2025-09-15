@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f127453009b44a409f9f6f7233b77af8, type: 3}
+  m_Name: AnimationsConfig
+  m_EditorClassIdentifier: 
+  COMMON_DELAY: 250
+  loadingMenuShowHideAnimationSpeed: 0.5
+  COMMON_ANIMATION_EASE: 1
+  COMMON_ANIMATION_TIME: 0.12
+  COMMON_ANIMATION_SCALE_DIFFERENCE: 0.9
+  CAMERA_ANIMATION_EASE: 9
+  CAMERA_ANIMATION_TIME: 0.75
+  CELLS_ANIMATION_EASE: 27
+  CELLS_ANIMATION_TIME: 0.15
+  CELLS_COOLDOWN: 35
+  CELLS_ICON_OBJECT_TURN_TIME: 4
+  CELLS_ANIMATION_SCALE_DIFFERENCE: 0.25
+  CELLS_ICON_OBJECT_SCALE_SMOOTH: 18
+  CELLS_UI_MESH_LAYER: 6
+  CELLS_VERTICAL_GAP_MULTIPLIER: 0.1
+  PANELS_ANIMATIONS_EASE: 27
+  PANELS_ANIMATIONS_TIME: 0.35
+  PANELS_BIG_ANIMATIONS_SCALE_DIFFERENCE: 0.99
+  PANELS_SMALL_ANIMATIONS_SCALE_DIFFERENCE: 0.97
+  GAMEPLAY_MENU_BATTLE_FRAME_EASE: 21
+  GAMEPLAY_MENU_BATTLE_FRAME_TIME: 0.25
+  UI_CHARACTER_LAYER: 6
+  UI_CHARACTER_SCALE: 65
+  UI_PLAYER_CHARACTER_ID: PlayerBattleCharacter
+  UI_ENEMY_CHARACTER_ID: EnemyBattleCharacter
+  popupInformationTitleColor: {r: 1, g: 1, b: 1, a: 1}
+  popupInformationTextColor: {r: 1, g: 1, b: 1, a: 1}
+  popupInformationButtonColor: {r: 0.43699816, g: 1, b: 0.19999999, a: 1}
+  popupErrorTitleColor: {r: 0.9, g: 0.3, b: 0.3, a: 1}
+  popupErrorTextColor: {r: 1, g: 0.19339621, b: 0.19339621, a: 1}
+  popupErrorButtonColor: {r: 0.9, g: 0.3, b: 0.3, a: 1}
+  popupInsufficientFundsTitleColor: {r: 1, g: 0.6, b: 0.2, a: 1}
+  popupInsufficientFundsTextColor: {r: 1, g: 0.9440759, b: 0.24056602, a: 1}
+  popupInsufficientFundsButtonColor: {r: 1, g: 0.6, b: 0.2, a: 1}

@@ -1,0 +1,47 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+Always respond user in Русский! 
+
+Do NOT write comments in code! But if you do - always in English! 
+
+SOLID principles must be followed! 
+KISS principle must be followed! Do not over-engineer! 
+
+Be very strict with the user, do not cater to him if something is not right! Critical thoughts. Add more emojis. 
+
+Code Style of the project: 
+
+1. Many nested methods, "self-documentation" of the code without comments, example of a nested method in the code:
+
+ Example of a nested method in the code: 
+ 
+ ```csharp 
+ Method(); 
+ void Method() 
+ { 
+    // code 
+ } 
+ ``` 
+ 
+ Local methods are declared after the call, very convenient in reading! 
+ 
+ 2. If there is something like this in the code: 
+ 
+ ```csharp 
+ if (condition) 
+ { 
+    // one line of code 
+ } 
+``` 
+
+Then it should be written like this: 
+
+```csharp 
+if (condition) 
+    // one line of code 
+``` 
+
+Strictly follow this Code-Style! Self-documentation must be everywhere!

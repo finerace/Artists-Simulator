@@ -1,0 +1,4 @@
+{
+    "dotnet.preferCSharpExtension": true,
+    "notifications.enabled": false
+}

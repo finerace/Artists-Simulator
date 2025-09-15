@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95879942302f3cc468ce7a3f41e59ef1, type: 3}
+  m_Name: ExceptionHandlingConfig
+  m_EditorClassIdentifier: 
+  enableGlobalExceptionHandling: 1
+  logAllExceptions: 1
+  maxRetries: 1
+  delayBetweenRetries: 1
+  useExponentialBackoff: 0
+  maxSaveRetries: 1
+  saveRetryDelay: 1
+  autoFallbackToLocalSave: 1
+  maxAssetLoadRetries: 1
+  assetLoadRetryDelay: 1
+  useFallbackAssets: 1
+  networkOperationTimeout: 5
+  maxNetworkRetries: 1
+  enableCurrencyRollback: 1
+  logAllCurrencyOperations: 1
+  maxExceptionsPerSecond: 10
+  enableExceptionStatistics: 1
+  showDebugErrorNotifications: 1
+  saveDetailedErrorLogs: 1
+  verboseLoggingInEditor: 1

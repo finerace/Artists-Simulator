@@ -1,0 +1,442 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Locations
+  m_EditorClassIdentifier: 
+  m_GroupName: Locations
+  m_GUID: 53011ab77a1053f4aba393d22ffc38dc
+  m_SerializeEntries:
+  - m_GUID: 00f7f006b403d4649a71127d5b5c1bd8
+    m_Address: Pixel Shades
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterItem
+    - Glasses
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 05a60b2354b1aab429377d362b6f1aa8
+    m_Address: GirlHair4
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterHair
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0e58a2531507c484ca46a8c2a54a52d5
+    m_Address: GirlHair2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterHair
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 136748ca5c0ab5c478e9ddccca64f9a7
+    m_Address: Jetpack
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Backpack
+    - Character
+    - CharacterItem
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1d0292e3e0c79f64cab4257ef8792f51
+    m_Address: CommonHair3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterHair
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 25f0cba9811aeb1459940413e9ab1a07
+    m_Address: CoolTie
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterItem
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2d48e1ebc51fca545b224e78ba567cbe
+    m_Address: ChickenBackpack
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Backpack
+    - CharacterItem
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3154d06ef1aff8a4c854f82f073c7d2a
+    m_Address: BoyHair2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterHair
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 394359ae9cbe71148bb5af9cfa24f809
+    m_Address: BoyHair4
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterHair
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3b9654aa435576e4ab1ab7c06420d29f
+    m_Address: MainLocation
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Location
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 49e0aaebb92ed6747a9b8954d547e147
+    m_Address: CapHatKnitcap
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterItem
+    - Hat
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4b11f3fe5f82bb5438c243631cd9f93d
+    m_Address: Backpack2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Backpack
+    - CharacterItem
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4b89bbe6eba4cdb45ae8b31b0ec41006
+    m_Address: BooHat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterItem
+    - Hat
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4c01b06e2a975b64d8960f4e4f6f6867
+    m_Address: CapHatDal0
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterItem
+    - Hat
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4ca2c1b47555db64a8cfe4be90838eb5
+    m_Address: TroseHat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterItem
+    - Hat
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 542ff084c0fd91246828cd38c8a9901b
+    m_Address: TigerGlasses
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterItem
+    - Glasses
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 58e9aeabf6d7ce4438a2c439fab37750
+    m_Address: DetectiveHat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterItem
+    - Hat
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 597599729db885d499e791de03151f9a
+    m_Address: SoldierHat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterItem
+    - Hat
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5b46f7824d6ae684f994a9494c52780b
+    m_Address: ChocheHat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterItem
+    - Hat
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5c4b981faf8145f4db91ea835d71b134
+    m_Address: BeachLi
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - LocationImprovements
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6647dd0d0d275634c941fb88a2a232f3
+    m_Address: PlayerHomeLI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - LocationImprovements
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 68365b3656621a64b910060ea3205c69
+    m_Address: BoyHair1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterHair
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 69411c9593365224c81b138776cc96e6
+    m_Address: CaptainHat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterItem
+    - Hat
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6d74e31ab9ef010468a976e4cbe54843
+    m_Address: GirlHair3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterHair
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 72939b7ce03d9614b8547c1264f4947c
+    m_Address: FountainLi
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - LocationImprovements
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 789ac22e46a5c904daa65daa4b081781
+    m_Address: UnitIconAccessory
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterItem
+    - Glasses
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7b6b14ae6bbae5c4facfcd2b31819aa3
+    m_Address: CuteGlasses
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterItem
+    - Glasses
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7bc4ee14b71972845a3b97d4191dd408
+    m_Address: FrogHat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterItem
+    - Hat
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7c41497c69d7f8748a21f03c86f362d8
+    m_Address: Birthday Shades
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterItem
+    - Glasses
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 84e5c02d5ef7a87498f231e53a82bd13
+    m_Address: MilitaryBackpack
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Backpack
+    - CharacterItem
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 896285ee98796c44db00f60c18a00947
+    m_Address: CapHatMeshcap0
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterItem
+    - Hat
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8d1b3a01fce5199468e5571a8dbecfeb
+    m_Address: PinkPuppers
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterItem
+    - Glasses
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9004fe93d6e0c2d40a32470565013407
+    m_Address: Birthday Shades_1 Variant
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterItem
+    - Glasses
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 91c06e78994b664499333b50ba3eceac
+    m_Address: WooGlasses
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterItem
+    - Glasses
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9505eab6247415043831a0473b6284fd
+    m_Address: TourBackpack
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Backpack
+    - CharacterItem
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9aacb1c1dc743ae47b41ea4fef869952
+    m_Address: BoyHair5
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterHair
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9b9b61249dede9c41809d96c44910a40
+    m_Address: Girl1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Character
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9c1e68243756a094faca7d38223a1434
+    m_Address: GirlHair5
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterHair
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9cd91c6b56de4cc4e8cdeaa7588a54c5
+    m_Address: GirlHair1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterHair
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9d2e3439369f3834bad150be41414c5e
+    m_Address: BearBackpack
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Backpack
+    - CharacterItem
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a041dc4b9c6aed4459902b6894d61637
+    m_Address: BoyHair3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterHair
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a4f6cd3ec9fa29945920f13f740d93bc
+    m_Address: Backpack1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Backpack
+    - CharacterItem
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a6eadf916404f574783aa91fdfa67515
+    m_Address: HedHat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterItem
+    - Hat
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aca43514c5bee9e49b1c077a8205fbef
+    m_Address: Backpack_1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Backpack
+    - CharacterItem
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b353c83fe3e274c489532387cf36279b
+    m_Address: SuperCoolGlasses
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterItem
+    - Glasses
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b5b74516e00ca574897b8e7365c72217
+    m_Address: Birthday Shades_2 Variant
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterItem
+    - Glasses
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b768718127dc07344b3b0a8177e8ffc5
+    m_Address: MafiaHat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterItem
+    - Hat
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ba3e2a67edf5d3a4cb9831631725eb6c
+    m_Address: GagGlasses
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterItem
+    - Glasses
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ba5f9f2c909b7874f900cf5d067256cf
+    m_Address: Birthday Shades_3 Variant
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterItem
+    - Glasses
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bbd6cac476dd14748925a85236d601bd
+    m_Address: Duppers
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterItem
+    - Glasses
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c0ca1d15d4fa34743a6d5d206ce8b0f1
+    m_Address: CommonHair2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterHair
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d327a149da499324cabf4137f0351022
+    m_Address: CommonHair1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterHair
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e218654c37b09e94fbf5ad1fce03c262
+    m_Address: 3D Glasses
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterItem
+    - Glasses
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e2c865136ee31024cb35e1f9b90a7944
+    m_Address: FarmLi
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - LocationImprovements
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e704c4578036ce2479ab2ef4cdf11484
+    m_Address: CuteBackpack
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Backpack
+    - CharacterItem
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e73a2fedac043674ebe7f92546e5f048
+    m_Address: OldBackpack
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Backpack
+    - CharacterItem
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e839b1c64514f984db60d4148988c14e
+    m_Address: StrawHat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterItem
+    - Hat
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f03d8b11006f24745a7883b56da2f37e
+    m_Address: StrangeHat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterItem
+    - Hat
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f1a68fc4f1e624f418b01f1dc6022f02
+    m_Address: Boy1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Character
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f2f84d2f8556f024fa59757302b994ee
+    m_Address: BuoyLi
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - LocationImprovements
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f9b82645409490c44b8bcfa23eb5df28
+    m_Address: Backpack3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Backpack
+    - CharacterItem
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ff2fc6bab9302c946899c65777800067
+    m_Address: BoyHair6
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterHair
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ffb56667493e96f4088155c20877306d
+    m_Address: SantaHat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CharacterItem
+    - Hat
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 067094986c29bff43bef12aab0f2eb4b, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 9e0c3514cd9547247b947d2752f49ac1, type: 2}
+    - {fileID: 11400000, guid: 2a93f89500c9bcf49b40623bd919f397, type: 2}

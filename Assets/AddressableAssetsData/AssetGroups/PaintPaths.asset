@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: PaintPaths
+  m_EditorClassIdentifier: 
+  m_GroupName: PaintPaths
+  m_GUID: f439608db750eaf44a7b6120c136fcbc
+  m_SerializeEntries:
+  - m_GUID: 090952c7743265547b8aaddd99e0558b
+    m_Address: PaintPath_8
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PaintPaths
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0f7d73ac9b5a8ab4cabdd79d0e65d9ff
+    m_Address: PaintPath_12
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PaintPaths
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 11e59fa66bc198a49a6eb44b25c1c351
+    m_Address: PaintPathRenderers
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PaintPaths
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2273cd92e06dd1b4b856954010b4a36b
+    m_Address: PaintPath_16
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PaintPaths
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 228e58e54e7adad4ba1a6e4022ec8135
+    m_Address: PaintPath_4
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PaintPaths
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4da4d40d07530194f9e3e20663848437
+    m_Address: PaintPath_3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PaintPaths
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5b3afe613d2c16941ad01ea9ccafc483
+    m_Address: PaintPath_5
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PaintPaths
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7bd5cfd31dda7c7429c3ddeff3f3015b
+    m_Address: PaintPath_18
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PaintPaths
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7e6d2021b2e77fd4bb48641dbd5108a0
+    m_Address: PaintPath_6
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PaintPaths
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7fcfd5756941a0c4a9bfa3b1e585d939
+    m_Address: PaintPath_19
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PaintPaths
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a49d4493ec6cb90468e992fc6942649a
+    m_Address: PaintPath_15
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PaintPaths
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ac5cd003847d2e74691f4698134fd492
+    m_Address: PaintPath_20
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PaintPaths
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: af863e6b0d235e64c87143d682e9f63b
+    m_Address: PaintPath_13
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PaintPaths
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c075a8111f327c44c9d4ebf7a30f7b95
+    m_Address: PaintPath_11
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PaintPaths
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c7dddea61ccc4b74ba4a2e0384caa4b1
+    m_Address: PaintPath_7
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PaintPaths
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d1491ba0f6f4b84489ed93b590d2fa19
+    m_Address: PaintPath_17
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PaintPaths
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d1fa36442abdf894b8173e921639da3f
+    m_Address: PaintPath_10
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PaintPaths
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: db1dd177676b003438c22e3110550acb
+    m_Address: PaintPath_9
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PaintPaths
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e6e7295cf9f2bbe4b8e31c6c5a2e7961
+    m_Address: PaintPath_2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PaintPaths
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f3ae3bbf3e02c9d458a445a92567687b
+    m_Address: PaintPath_1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PaintPaths
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fcef4290e454d4745ac9c2ebd1852fc1
+    m_Address: PaintPath_14
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PaintPaths
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 067094986c29bff43bef12aab0f2eb4b, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: a6c9bef0d5a4a9547bf2f4594bc07a98, type: 2}
+    - {fileID: 11400000, guid: 7e2ea3a097b8a0448913f6975ec9660f, type: 2}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="UserContentModel">
+    <attachedFolders>
+      <Path>Library/PackageCache/com.finerace.loxodon.fody.methodboundaryaspect@390f34f0740c</Path>
+    </attachedFolders>
+    <explicitIncludes>
+      <Path>Library/APIUpdater</Path>
+      <Path>Library/AnnotationManager</Path>
+      <Path>Library/ArtifactDB</Path>
+      <Path>Library/ArtifactDB-lock</Path>
+      <Path>Library/Artifacts</Path>
+      <Path>Library/Bee</Path>
+      <Path>Library/BuildInstructions</Path>
+      <Path>Library/BuildPlayer.prefs</Path>
+      <Path>Library/BuildProfileContext.asset</Path>
+      <Path>Library/BuildProfiles</Path>
+      <Path>Library/BuildSettings.asset</Path>
+      <Path>Library/BurstCache</Path>
+      <Path>Library/EditorInstance.json</Path>
+      <Path>Library/EditorOnlyScriptingSettings.json</Path>
+      <Path>Library/EditorOnlyVirtualTextureState.json</Path>
+      <Path>Library/EditorSnapSettings.asset</Path>
+      <Path>Library/EditorUserBuildSettings.asset</Path>
+      <Path>Library/InspectorExpandedItems.asset</Path>
+      <Path>Library/LastSceneManagerSetup.txt</Path>
+      <Path>Library/LibraryFormatVersion.txt</Path>
+      <Path>Library/MonoManager.asset</Path>
+      <Path>Library/PackageCache</Path>
+      <Path>Library/PackageManager</Path>
+      <Path>Library/PreviousActionData.bin</Path>
+      <Path>Library/PreviousActionStack.bin</Path>
+      <Path>Library/ProtocolInstance.json</Path>
+      <Path>Library/SceneVisibilityState.asset</Path>
+      <Path>Library/ScriptAssemblies</Path>
+      <Path>Library/ScriptMapper</Path>
+      <Path>Library/Search</Path>
+      <Path>Library/ShaderCache</Path>
+      <Path>Library/ShaderCache.db</Path>
+      <Path>Library/SourceAssetDB</Path>
+      <Path>Library/SourceAssetDB-lock</Path>
+      <Path>Library/SpriteAtlasDatabase.asset</Path>
+      <Path>Library/StateCache</Path>
+      <Path>Library/Style.catalog</Path>
+      <Path>Library/TempArtifacts</Path>
+      <Path>Library/UIElements</Path>
+      <Path>Library/UndoData.bin</Path>
+      <Path>Library/UndoStack.bin</Path>
+      <Path>Library/com.unity.addressables</Path>
+      <Path>Library/com.unity.ide.rider</Path>
+      <Path>Library/expandedItems</Path>
+      <Path>Library/ilpp.pid</Path>
+    </explicitIncludes>
+    <explicitExcludes />
+  </component>
+</project>

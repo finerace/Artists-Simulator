@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4842ab34384f03b438603ecf30eb0ce9, type: 3}
+  m_Name: FaceItemsPack
+  m_EditorClassIdentifier: 
+  itemId: EYEPck
+  slotId: 
+  itemNameId: 0
+  itemDescId: 0
+  isItemsPack: 1
+  itemsPack:
+  - {fileID: 11400000, guid: b78f821a5e39f9e458cb046c3c8a0dc7, type: 2}
+  - {fileID: 11400000, guid: 63fa3c16ac51f914ba7e015098f1d7be, type: 2}
+  - {fileID: 11400000, guid: 84991d3897dde6446961ac220d47b32c, type: 2}
+  - {fileID: 11400000, guid: 738b82c87a4570d4d8fd7d428b45256d, type: 2}
+  - {fileID: 11400000, guid: a198552b83e67e343987b329a75d285c, type: 2}
+  - {fileID: 11400000, guid: ae5aee09628524940a5679ee8ecddd6d, type: 2}
+  - {fileID: 11400000, guid: 35885ff7b660ac14596ff7fbcb728d0c, type: 2}
+  itemType: 0
+  itemIsAlwaysUnlocked: 0
+  isHiddenFromShop: 0
+  coinsPrice: 1000
+  crystalsPrice: 0
+  characterGender: 2
+  isCanColorize: 1
+  defaultColor: {r: 0.2627451, g: 0.42776754, b: 0.9137255, a: 1}
+  colorizeCoinsPrice: 150
+  itemObjectAddressableId: 
+  itemMaterial: {fileID: 0}
+  isIconObject: 0
+  iconObjectScale: 1
+  iconObjectLocalPos: {x: 0, y: 0, z: 0}
+  iconColor: {r: 0.2784314, g: 0.57254905, b: 1, a: 1}
+  itemIcon: {fileID: 2800000, guid: 805c8057cd01f974bb4d59d277f9effd, type: 3}

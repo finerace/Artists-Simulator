@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4842ab34384f03b438603ecf30eb0ce9, type: 3}
+  m_Name: BodySkin 4
+  m_EditorClassIdentifier: 
+  itemId: MBSk4
+  slotId: BodyCloth
+  itemNameId: 0
+  itemDescId: 0
+  isItemsPack: 0
+  itemsPack: []
+  itemType: 1
+  itemIsAlwaysUnlocked: 1
+  isHiddenFromShop: 0
+  coinsPrice: 1000
+  crystalsPrice: 0
+  characterGender: 0
+  isCanColorize: 1
+  defaultColor: {r: 1, g: 0.9647059, b: 0.22352941, a: 1}
+  colorizeCoinsPrice: 250
+  itemObjectAddressableId: 
+  itemMaterial: {fileID: 2100000, guid: 7f07f595c5b7ea04aad3be83c926434d, type: 2}
+  isIconObject: 0
+  iconObjectScale: 1
+  iconObjectLocalPos: {x: 0, y: 0, z: 0}
+  iconColor: {r: 1, g: 1, b: 1, a: 1}
+  itemIcon: {fileID: 2800000, guid: c57f9079dad50864bac20f22254031b8, type: 3}

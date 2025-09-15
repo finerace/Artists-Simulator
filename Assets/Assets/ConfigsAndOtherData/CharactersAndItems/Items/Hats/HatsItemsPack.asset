@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4842ab34384f03b438603ecf30eb0ce9, type: 3}
+  m_Name: HatsItemsPack
+  m_EditorClassIdentifier: 
+  itemId: HtPck
+  slotId: 
+  itemNameId: 0
+  itemDescId: 0
+  isItemsPack: 1
+  itemsPack:
+  - {fileID: 11400000, guid: a6f3c1d068de30649899f083fa5167e4, type: 2}
+  - {fileID: 11400000, guid: 5dcb2c971cd279547809b5dd235303c2, type: 2}
+  - {fileID: 11400000, guid: 0427d02c947f8784fa5255626a4c2325, type: 2}
+  - {fileID: 11400000, guid: 6fb876d9b2c658549a560304060811d2, type: 2}
+  - {fileID: 11400000, guid: a300d1906782a02408f8cda74cf330b8, type: 2}
+  - {fileID: 11400000, guid: 2a585b3098c5802418bb727c7fc3d419, type: 2}
+  - {fileID: 11400000, guid: 869d2ad094328244ca6bac9132465dc7, type: 2}
+  - {fileID: 11400000, guid: 51065cf3aab4e4c4b8dc4b7325dc58b9, type: 2}
+  - {fileID: 11400000, guid: a4440f5729d388742b612f405ffeee8a, type: 2}
+  - {fileID: 11400000, guid: 9570d9f694eb74e419576f6686fafde4, type: 2}
+  - {fileID: 11400000, guid: 887a791816f47b843800d6cb6aa6d891, type: 2}
+  - {fileID: 11400000, guid: 1be289a7be6c5954a88fd0cc8421b38e, type: 2}
+  itemType: 0
+  itemIsAlwaysUnlocked: 0
+  coinsPrice: 1000
+  crystalsPrice: 0
+  characterGender: 2
+  isCanColorize: 1
+  defaultColor: {r: 0.2627451, g: 0.42776754, b: 0.9137255, a: 1}
+  colorizeCoinsPrice: 150
+  itemObjectAddressableId: 
+  itemMaterial: {fileID: 0}
+  isIconObject: 0
+  iconObjectScale: 1
+  iconObjectLocalPos: {x: 0, y: 0, z: 0}
+  iconColor: {r: 0.2784314, g: 0.57254905, b: 1, a: 1}
+  itemIcon: {fileID: 2800000, guid: f50f61a9843fa204eb64d740c463cb61, type: 3}

@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4842ab34384f03b438603ecf30eb0ce9, type: 3}
+  m_Name: Eye 3
+  m_EditorClassIdentifier: 
+  itemId: Eye3
+  slotId: Eye
+  itemNameId: 0
+  itemDescId: 0
+  isItemsPack: 0
+  itemsPack: []
+  itemType: 1
+  itemIsAlwaysUnlocked: 1
+  isHiddenFromShop: 0
+  coinsPrice: 1000
+  crystalsPrice: 0
+  characterGender: 2
+  isCanColorize: 1
+  defaultColor: {r: 0.1509434, g: 0.1509434, b: 0.1509434, a: 1}
+  colorizeCoinsPrice: 150
+  itemObjectAddressableId: 
+  itemMaterial: {fileID: 2100000, guid: c07a2ee7ee98a544c87c2e27d0fc0524, type: 2}
+  isIconObject: 0
+  iconObjectScale: 1
+  iconObjectLocalPos: {x: 0, y: 0, z: 0}
+  iconColor: {r: 1, g: 1, b: 1, a: 1}
+  itemIcon: {fileID: 2800000, guid: e26b9b6ba3066384f97a792962fa82fb, type: 3}

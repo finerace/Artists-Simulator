@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4842ab34384f03b438603ecf30eb0ce9, type: 3}
+  m_Name: BodySkins
+  m_EditorClassIdentifier: 
+  itemId: BodySkinsItems
+  slotId: 
+  itemNameId: 0
+  itemDescId: 0
+  isItemsPack: 1
+  itemsPack:
+  - {fileID: 11400000, guid: 67619ab792e282b40929c277881c16c5, type: 2}
+  - {fileID: 11400000, guid: 3c38b7bdd8e223142a97946e5b054288, type: 2}
+  - {fileID: 11400000, guid: 901364d6b6458fe458dca60d13079e97, type: 2}
+  - {fileID: 11400000, guid: 853a1670c8c9d794c88828c575749fbe, type: 2}
+  - {fileID: 11400000, guid: a475dfcc1e74c8940a6985b9ca04dff7, type: 2}
+  - {fileID: 11400000, guid: e3517ce6ca280a448af449ae903af1f4, type: 2}
+  - {fileID: 11400000, guid: a92d9e63e49ae3a4591342b078debd1e, type: 2}
+  - {fileID: 11400000, guid: 4fd6b9f46b3eaea4290b2bd23711f5db, type: 2}
+  itemType: 0
+  itemIsAlwaysUnlocked: 0
+  coinsPrice: 1000
+  crystalsPrice: 0
+  characterGender: 2
+  isCanColorize: 1
+  defaultColor: {r: 0.2627451, g: 0.42776754, b: 0.9137255, a: 1}
+  colorizeCoinsPrice: 150
+  itemObjectAddressableId: 
+  itemMaterial: {fileID: 0}
+  isIconObject: 0
+  iconObjectScale: 1
+  iconObjectLocalPos: {x: 0, y: 0, z: 0}
+  iconColor: {r: 0.2784314, g: 0.57254905, b: 1, a: 1}
+  itemIcon: {fileID: 2800000, guid: 788ef0c139c2854439948b07ac52d60c, type: 3}

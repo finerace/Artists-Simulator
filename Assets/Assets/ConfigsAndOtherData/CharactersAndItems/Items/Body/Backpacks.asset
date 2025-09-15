@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4842ab34384f03b438603ecf30eb0ce9, type: 3}
+  m_Name: Backpacks
+  m_EditorClassIdentifier: 
+  itemId: BackpacksPack
+  slotId: 
+  itemNameId: 0
+  itemDescId: 0
+  isItemsPack: 1
+  itemsPack:
+  - {fileID: 11400000, guid: fcbe0df71c443694297f03fc8ffa84b3, type: 2}
+  - {fileID: 11400000, guid: 38e829f4b00230d49bd387e74e55a0b3, type: 2}
+  - {fileID: 11400000, guid: 2a4f3acbab87546469faffe7349b8c40, type: 2}
+  - {fileID: 11400000, guid: 45feacbdf59221e4abbcd0625d0a2e92, type: 2}
+  - {fileID: 11400000, guid: 25de3080504d2a248bfe8fb6b8608a04, type: 2}
+  - {fileID: 11400000, guid: 26973f876b082974ba67042e58fb4e4e, type: 2}
+  - {fileID: 11400000, guid: 4754bc530f8fdc84fab5a9c41c17b6e1, type: 2}
+  - {fileID: 11400000, guid: 1c325e9c5ad836c4eb17cadb969b1cf9, type: 2}
+  - {fileID: 11400000, guid: c07d882cb2da6c549b12ad48f6db6d87, type: 2}
+  - {fileID: 11400000, guid: 568af3cacce8f024eb26c181caaaa10d, type: 2}
+  - {fileID: 11400000, guid: 9ae08c6b46ecdfb4993923baa7320973, type: 2}
+  - {fileID: 11400000, guid: 58e42479d27733c43a464c592568928e, type: 2}
+  itemType: 0
+  itemIsAlwaysUnlocked: 0
+  coinsPrice: 1000
+  crystalsPrice: 0
+  characterGender: 2
+  isCanColorize: 1
+  defaultColor: {r: 0.2627451, g: 0.42776754, b: 0.9137255, a: 1}
+  colorizeCoinsPrice: 150
+  itemObjectAddressableId: 
+  itemMaterial: {fileID: 0}
+  isIconObject: 0
+  iconObjectScale: 1
+  iconObjectLocalPos: {x: 0, y: 0, z: 0}
+  iconColor: {r: 0.2784314, g: 0.57254905, b: 1, a: 1}
+  itemIcon: {fileID: 2800000, guid: 498c447e160efde43a532339de80fd90, type: 3}

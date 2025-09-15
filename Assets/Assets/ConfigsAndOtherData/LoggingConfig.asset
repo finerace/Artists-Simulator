@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38fa054390684374d8918274b3e475c5, type: 3}
+  m_Name: LoggingConfig
+  m_EditorClassIdentifier: 
+  minimumLogLevel: 0
+  enableConsoleLogging: 1
+  enableUnityLogging: 1
+  enableTimestamps: 0
+  showTimestamp: 1
+  showMethodName: 1
+  showFileName: 1
+  showLineNumber: 0
+  enableEditorFileLogs: 1
+  maxSessionLogFiles: 10
+  logFileDirectory: Logs/Sessions
+  useUnityLogForWebGL: 0
+  logToPlayerPrefs: 0
+  maxLogEntriesInPlayerPrefs: 0

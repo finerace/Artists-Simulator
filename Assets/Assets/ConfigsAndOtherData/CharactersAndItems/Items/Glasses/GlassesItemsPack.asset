@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4842ab34384f03b438603ecf30eb0ce9, type: 3}
+  m_Name: GlassesItemsPack
+  m_EditorClassIdentifier: 
+  itemId: GlPck
+  slotId: 
+  itemNameId: 0
+  itemDescId: 0
+  isItemsPack: 1
+  itemsPack:
+  - {fileID: 11400000, guid: c13f71db6fb2b9f44a0593d5d9f86c68, type: 2}
+  - {fileID: 11400000, guid: 2404424c659bb2f479ae00d076900aab, type: 2}
+  - {fileID: 11400000, guid: 9bb20802c03c21d469f2f701d42329d5, type: 2}
+  - {fileID: 11400000, guid: 9fcb15a34e4b2ce4ebee17d52a5b4edb, type: 2}
+  - {fileID: 11400000, guid: 92acfa86ea020e14492c0d9efce852dc, type: 2}
+  - {fileID: 11400000, guid: dbc85a15da793c8418b032aae743b87a, type: 2}
+  - {fileID: 11400000, guid: c2bc36b6048f5a4428446b104fdbf9f5, type: 2}
+  - {fileID: 11400000, guid: 2d7baecda30db3d41a8a9ae6a7144195, type: 2}
+  - {fileID: 11400000, guid: b979b92522b22234cb5da1ecfb935fa0, type: 2}
+  - {fileID: 11400000, guid: 0e50e2e67b99518429dc24e5ec6f85df, type: 2}
+  itemType: 0
+  itemIsAlwaysUnlocked: 0
+  isHiddenFromShop: 0
+  coinsPrice: 1000
+  crystalsPrice: 0
+  characterGender: 2
+  isCanColorize: 1
+  defaultColor: {r: 0.2627451, g: 0.42776754, b: 0.9137255, a: 1}
+  colorizeCoinsPrice: 150
+  itemObjectAddressableId: 
+  itemMaterial: {fileID: 0}
+  isIconObject: 0
+  iconObjectScale: 1
+  iconObjectLocalPos: {x: 0, y: 0, z: 0}
+  iconColor: {r: 0.2783019, g: 0.5708823, b: 1, a: 1}
+  itemIcon: {fileID: 2800000, guid: 03bd6c059888f324886efc585e181a76, type: 3}

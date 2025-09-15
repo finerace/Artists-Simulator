@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ce8ec6158eb44b2a80a106dd77525e9, type: 3}
+  m_Name: LocImproveConfig
+  m_EditorClassIdentifier: 
+  locationImprovementDatas:
+  - {fileID: 11400000, guid: e81c170782d0e9041a750778cc2404ad, type: 2}
+  - {fileID: 11400000, guid: 8589ca49d8cd0b74d8e9d0d0185b71d7, type: 2}
+  - {fileID: 11400000, guid: c1e85b00a7b8c0d4c9b8c1c64175937b, type: 2}
+  - {fileID: 11400000, guid: 713d5399bf6ac3f47b2dcf937d17b549, type: 2}
+  - {fileID: 11400000, guid: 8f8d75e6d6804104ca2835a31de9ddf5, type: 2}
