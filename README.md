@@ -1,3 +1,8 @@
+<p align="right">
+  <img src="https://flagpedia.net/data/flags/w20/gb.png" width="20" alt="English">
+  <a href="#-english-version"> English Version</a>
+</p>
+
 <p align="center">
   <img src="docs/images/logo.png" width="450" alt="Artist's Simulator Logo">
 </p>
@@ -361,4 +366,386 @@
   </a>
 </p>
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
+## <a name="english-version"></a> English Version
+
+<p align="right">
+  <img src="https://flagpedia.net/data/flags/w20/ru.png" width="20" alt="Русский">
+  <a href="#привет-я-finerace-и-это--мой-флагманский-проект-портфолио">Русская версия</a>
+</p>
+
+<p align="center">
+  <img src="docs/images/logo.png" width="450" alt="Artist's Simulator Logo">
+</p>
+
+<h3 align="center">Hi! I'm FineRace, and this is my flagship portfolio project.</h3>
+
+<p align="center">
+  <a href="https://play.google.com/store/apps/details?id=com.bloopbe.artistssimulator" target="_blank">
+    <img src="https://img.shields.io/badge/Google Play-000000?style=flat-square&logo=google-play&logoColor=white&labelColor=414141&color=black" alt="Google Play"/>
+  </a>
+  <a href="https://www.linkedin.com/in/finerace/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white&labelColor=0A66C2&color=0077B5" alt="LinkedIn"/>
+  </a>
+  <a href="https://t.me/finerace" target="_blank">
+    <img src="https://img.shields.io/badge/Telegram-26A5E4?style=flat-square&logo=telegram&logoColor=white&labelColor=26A5E4&color=2CA5E0" alt="Telegram"/>
+  </a>
+</p>
+
+---
+
+<p align="center">
+  <img src="docs/gif/gif (1).gif" width="400" alt="Gameplay Demo">
+  <img src="docs/gif/gif (2).gif" width="400" alt="Character Customization">
+</p>
+
+---
+
+### 💡 About the Project
+
+"Artist's Simulator" is a competitive speed-painting game featuring deep character and location customization. The project is built on a flexible, data-driven architecture (SOLID, DI, FSM) designed for long-term support and cost-effective content updates.
+
+> [!NOTE]
+> <details>
+>   <summary><strong>Learn more about the project...</strong></summary>
+>
+>   <br>
+>
+>   *   **🎮 Core Loop:** The player enters a competitive match where they are sequentially given patterns to draw. The main objective is to replicate the pattern on the canvas as accurately and quickly as possible using a mouse or swipe gestures. When the match timer ends or the score target is reached, the player's result is compared to an AI opponent's score, and the player receives a reward.
+>
+>   *   **🧑‍🎨 Meta Gameplay:** The earned currency is spent in the shop to customize the character and upgrade the main location. The player's unique appearance is then showcased during competitive matches.
+>
+>   *   **🎯 Project Goal:** To create an engaging mobile game based on a professional, data-driven architecture. This project is a practical implementation of principles like SOLID, KISS, and YAGNI, aimed at ensuring long-term maintainability and low-cost content additions.
+>
+> </details>
+
+---
+
+<p align="center">
+  <img src="docs/gif/gif (3).gif" width="400" alt="UI Animation">
+  <img src="docs/gif/gif (4).gif" width="400" alt="Gameplay Demo">
+</p>
+
+---
+
+### ⚙️ Under the Hood: Architectural Decisions
+
+The project's core is a combination of **DI (Zenject)**, **FSM**, and services, where FSM states act as the main orchestrators. This ensures high modularity and allows for the reuse of components across different parts of the game. For particularly complex UI screens, such as the shop, **local DI containers** are used to create an isolated "mini-universe" of dependencies that lives and dies with the screen.
+
+> [!NOTE]
+> <details>
+>   <summary><strong>See the architecture in action...</strong></summary>
+>
+>   <br>
+>
+>   #### 1. 🧩 Control Flow 
+>
+>   *  **Entry Point:** The main `GameBootrapper` initializes the global DI container and starts the `GameStateMachine`.
+>   
+>   *  **Loading (`BootState`):** Asynchronously initializes all global services via `UniTask`, loads the main scene, and starts the `UIStateMachine`.
+>   
+>   *  **Separation of Concerns:** The `GameStateMachine` manages the global state (e.g., in menu, in game), while the `UIStateMachine` exclusively handles UI display and logic, receiving commands from the "parent" FSM.
+>
+>   ---
+>
+>   #### 2. 🕹️ Stress Test: Adding a "Daily Quests" System
+>
+>   The architecture's flexibility allows for the easy integration of a new complex system:
+>
+>   *   **Step 1 (Data):** A global `QuestDataService` is created to store information about available and completed quests. It is registered in the DI container.
+>
+>   *   **Step 2 (Logic):** A `QuestExecutionService` is created. It monitors the state of the `GameStateMachine` and, depending on the current state (e.g., if we are in gameplay), activates the appropriate **strategy modules** to check for quest completion. For instance, a quest like "Spend 500 coins" would activate a strategy that listens to events from `CurrenciesService`, while a quest like "Draw 3 patterns" would use a strategy that tracks `PaintGameplayGenerationService`.
+>
+>   *   **Step 3 (Presentation):** A UI prefab and a new `DailyQuestUIState` are created for the `UIStateMachine`. This state initializes the menu. A `QuestsMenuObserver` gains access to `QuestDataService` when the menu prefab is instantiated via `.InjectGameObject` in the `IAssetsService`. The `QuestsMenuObserver` then displays the current quests and their progress.
+>
+>   **✨ Result:** The new system is completely modular. The validation logic is decoupled from the data and the presentation layers. New quest types can be added simply by creating a new "strategy" without touching any existing code.
+>
+>
+> </details>
+
+---
+
+### 🛠️ Implemented Modular Systems
+
+The project consists of numerous modular subsystems, including a complex real-time drawing mechanic, data-driven customization, an asynchronous core powered by `UniTask`, and a custom AOP plugin. Each system is designed for maximum independence and reusability.
+
+> [!NOTE]
+> <details>
+>   <summary><strong>Show the full list of systems...</strong></summary>
+>
+>   <br>
+>
+>   #### I. Core Gameplay Systems
+>
+>   *   **✍️ Drawing and Accuracy Evaluation System**
+>       *   **Responsible Classes:** `PaintingService`, `PaintExecutionService`, `PaintAccuracyService`, `BrushControlService`.
+>       *   **Essence:** A complex of systems responsible for rendering strokes on a `Texture2D` in real-time, managing the movement of a 3D brush, and performing a sophisticated calculation of how accurately the stroke follows the outline.
+>           <details>
+>           <summary><strong>🧠 Implementation Highlights...</strong></summary>
+>         	The most challenging task was implementing the curve mathematics and their correct projection onto a 3D canvas. The key achievement was optimization: to avoid pixelation on a low-resolution canvas, a custom anti-aliasing and blur shader was integrated. This delivered high-quality visuals with minimal performance overhead.
+>           </details>
+>
+>   *   **🗺️ Instructions and Variability System**
+>       *   **Responsible Classes:** `PathGenerationService`, `PaintPath`.
+>       *   **Essence:** Responsible for selecting, loading, and placing pre-made drawing instruction paths onto the canvas. To enhance replayability, random transformations (rotation, reflection) are applied to each instruction.
+>
+>   *   **🤖 Adaptive AI Opponent System**
+>       *   **Responsible Classes:** `PseudoEnemyService`, `CompetitiveGameConfig`.
+>       *   **Essence:** Simulates an opponent's actions during a match. The AI's speed and accuracy are fully configurable via a `ScriptableObject` config and dynamically adapt to the player's skill level and in-match progress, creating an organic and flexible challenge.
+> 
+> ---
+> 
+>   #### II. Meta & Progression Systems
+>
+>   *   **🧑‍🎨 Character Customization System**
+>       *   **Responsible Classes:** `CharactersServiceFacade`, `CharacterCustomizationView`, `ObjectSlotReference`, `MaterialSlotReference`, `HairSlotReference`, `CharacterItemData`.
+>       *   **Essence:** A data-driven system that allows for flexible character appearance customization by applying different types of items (`Object`, `Material`, `Hair`) to various slots.
+>           <details>
+>           <summary><strong>🧠 Implementation Highlights...</strong></summary>
+>           The main achievement is its absolute modularity. The system allows creating any character without a single line of code, using only assets. The slot architecture is so flexible that it can be easily extended with new types (e.g., adding a "fractal" slot or any other), providing limitless customization possibilities. The shop UI is built on the MVP pattern, completely decoupling logic from visual presentation.
+>           </details>
+>
+>   *   **🏡 Location Improvement System**
+>       *   **Responsible Classes:** `LocationImprovementsService`, `LocationImprovementItemData`.
+>       *   **Essence:** Allows the player to spend currency to purchase and display cosmetic upgrades in the main location, visualizing their progress.
+>
+>   *   **💰 Economy and Player Level System**
+>       *   **Responsible Classes:** `CurrenciesService`, `PlayerLevelService`.
+>       *   **Essence:** Manages in-game currencies and the experience/level system, which affects AI difficulty and rewards.
+>
+> ---
+>
+>   #### III. Architectural & Core Systems
+>
+>   *   **🏛️ Architectural Framework (DI & FSM)**
+>       *   **Responsible Classes:** `GameStateMachine`, `UIStateMachine`, `BootState`, `ShopInstaller` (example of `GameObjectContext`).
+>       *   **Essence:** The project's foundation. Two finite-state machines manage the global and UI states, while Dependency Injection (Zenject) connects all systems through interfaces.
+>
+>   *   **🚀 Asynchronous Core**
+>       *   **Responsible Classes:** `AssetsService`, `BootState` (example of `UniTask` usage).
+>       *   **Essence:** All "heavy" operations (loading assets, scenes, UI) are performed asynchronously using `UniTask` and the `Addressable Assets System`, ensuring a smooth, freeze-free application experience.
+>
+> 
+>   *   **💾 Save System**
+>       *   **Responsible Classes:** `MobileSaveLoadService`.
+>       *   **Essence:** Responsible for saving all player progress. A key feature is its **debounce mechanism**, which groups frequent save calls (e.g., on every customization change) into a single call, preventing excessive system load.
+>
+>   *   **✨ Metaprogramming (AOP)**
+>       *   **Responsible Classes:** `MagicAttributes.cs` (`[LogMethod]`, `[SafeAnimation]`).
+>       *   **Essence:** Using a **[custom open-source plugin](https://github.com/finerace/MethodBoundaryAspect.Fody-for-Unity)**, additional logic (logging, safe exception handling in animations) is automatically woven into the code at compile time. This keeps the main codebase cleaner and reduces boilerplate.
+>
+> --- 
+>
+>   #### IV. Supporting & Utility Systems
+>
+>   *   **🎧 Audio System**
+>       *   **Responsible Classes:** `AudioPoolService`.
+>       *   **Essence:** Manages all sound playback. It uses an **object pool** for `AudioSource` components to avoid constant instantiation and destruction, which improves performance.
+>
+>   *   **⚙️ Configuration System (Data-Driven Design)**
+>       *   **Responsible Classes:** `ConfigsProxy`, all classes in the `Configs` folder.
+>       *   **Essence:** Provides centralized access to all game settings via `ScriptableObject` configs. This allows for changes to game balance, item additions, animation tweaks, and more without modifying the code.
+>
+>   *   **🌍 Localization System**
+>       *   **Responsible Classes:** `LocalizationService`, `TextLocalizer`, `LocalizationConfig`.
+>       *   **Essence:** Enables translation of all in-game text into different languages by loading data from text files.
+>
+>   *   **🔧 Editor Tools**
+>       *   **Responsible Classes:** `CharacterCustomizationViewEditor`, `LocalizationKeysGenerator`.
+>       *   **Essence:** A set of custom inspectors for the Unity Editor that simplify and accelerate the content setup process (e.g., auto-generating customization slots based on a `ScriptableObject` template).
+>
+> </details>
+
+---
+
+<p align="center">
+  <img src="docs/gif/gif (5).gif" width="400" alt="Character Customization">
+  <img src="docs/gif/gif (6).gif" width="400" alt="UI Animation">
+</p>
+
+---
+
+### 🚀 From Monolith to Modularity: A Case Study
+
+The project's monolithic character customization shop UI was completely overhauled. Through refactoring, a complex "God Object" was decomposed into independent, testable components following the MVP pattern with Dependency Injection. This process demonstrates the practical application of SOLID principles to create a maintainable and scalable architecture.
+
+> [!NOTE]
+> <details>
+> <summary><strong>Show the full refactoring report...</strong></summary>
+> 
+> # 📝 Refactoring the Character Customization Menu
+> 
+> ## 1. 🧐 Initial Architecture: Problems and Merits
+> 
+> Originally, all system logic was concentrated in two monolithic classes: `CharacterCustomisationShopViewDEBUG.cs` and `ShopCellViewDEBUG.cs`. This approach had both its advantages and significant drawbacks.
+> 
+> ### 1.1. 🟢 Merits
+> 
+> *   ✅ **Centralized Logic**: Nearly all logic was in one place, which simplified bug hunting—no need to jump between dozens of files.
+> *   👍 **Minimal Orchestration Code**: A single control center required minimal boilerplate and management logic.
+> *   ✨ **Perceived Simplicity**: At first glance, the code seemed straightforward as it didn't require understanding numerous classes and their interactions.
+> *   🚀 **Initial Ease of Extension**: Adding new functionality was relatively simple in the early stages.
+> 
+> ### 1.2. 🔴 Drawbacks
+> 
+> *   😟 **Difficult to Understand**: The relationships between numerous components within a single class were tangled and non-obvious.
+> *   ❌ **Untestable**: A "God Object" is nearly impossible to cover with unit tests.
+> *   ⛓️ **High Coupling**: An error in one component could cause the entire system to fail.
+> *   📈 **Exponential Complexity Growth**: Each new change or feature made the class increasingly complex and unwieldy.
+> *   🔄 **Zero Reusability**: Using the class or its parts in other systems or projects was impossible.
+> *   🔥 **Difficult to Maintain**: Maintaining and fixing bugs in such code became progressively harder.
+> 
+> ### 1.3. 🤔 Conclusion
+> 
+> The need for refactoring was debatable and depended on the project's future development plans:
+> *   If the system required no further modifications, it could have been left "as is."
+> *   👉 However, with plans for extension, modification, or reuse of components, refactoring became not just desirable, but **essential**. Extending the existing architecture would be like shooting yourself in the foot.
+> 
+> ### 1.4. 🎯 Final Decision
+> 
+> The decision was made to refactor. The primary motivations were:
+> 1.  **Reuse Plans**: The ability to use this system in future projects.
+> 2.  **Practice**: An excellent opportunity to hone skills in decomposition, design, and the application of fundamental programming principles.
+> 
+> ---
+> 
+> ## 2. 🏗️ Refactoring, Phase 1: Transition to MVP
+> 
+> **MVP (Model-View-Presenter)** was chosen as the target architectural pattern. It was ideal for the task due to the low coupling of its components and their potential for isolation.
+> 
+> ### 2.1. MODEL 📦
+> 
+> The data model already partially existed (`CharacterItemData.cs`, configs, ScriptableObjects). However, the data handling logic (e.g., filtering) was hard-coded into the View. A separate provider was extracted:
+> *   `ItemsProvider.cs`: Encapsulated the logic for filtering and providing items.
+> 
+> ### 2.2. VIEW 🖼️
+> 
+> The View was extracted from the existing `CharacterCustomisationShopPanelManager.cs` and `ShopCellViewDEBUG.cs`:
+> *   `ICharacterItemsShopView.cs` / `CharacterItemsShopView.cs`: A "dumb" View responsible only for displaying shop UI elements (panels, buttons, prices).
+> *   `IShopCellView.cs` / `ShopCellView.cs`: The View for an individual cell, responsible for its display and animations.
+> 
+> ### 2.3. PRESENTER 🧠
+> 
+> All controlling logic was moved into the Presenter, and cell creation was delegated to a separate factory:
+> *   `ShopPresenterDEBUG2.cs`: The first version of the Presenter, which orchestrated the interaction between the Model and the View.
+> *   `IShopCellsFabric.cs` / `ShopCellsFabric.cs`: A factory responsible for creating and destroying cell Views.
+> 
+> ### 2.4. 🧩 Other Improvements
+> 
+> *   **Interfaces**: All key system components were covered by interfaces (`ICharacterItemsShopView`, `IShopCellView`, `IShopCellsFabric`, etc.) to ensure loose coupling and the ability to substitute dependencies.
+> *   `IColorSelectWidget.cs` / `ColorSelector.cs`: The color selection widget was abstracted behind an interface to decouple it from a specific implementation.
+> *   `ILayoutManager.cs` / `GridLayoutManager.cs`: The mathematical logic for calculating cell positions in a grid was extracted into a separate utility class, allowing the layout algorithm to be easily changed.
+> 
+> ### 2.5. ✅ Phase 1 Summary
+> 
+> The architecture became significantly more robust, testable, and flexible. It was now possible to reuse individual components. However, `ShopPresenterDEBUG2.cs` was still too large and complex, violating the Single Responsibility Principle (SRP).
+> 
+> ---
+> 
+> ## 3. 🔪 Refactoring, Phase 2: Decomposition and DI
+> 
+> The main goal of the second phase was to decompose the monolithic `ShopPresenterDEBUG2.cs` and assemble the new architecture using Dependency Injection.
+> 
+> ### 3.1. `ShopCellsPresenter.cs`
+> 
+> *   **Responsibility**: Managing the lifecycle of cells. 🏗️ Building, rebuilding, and destroying the cell grid. Updating the state of cell `Views`.
+> *   **Interface**: `IShopCellsPresenter.cs`
+> 
+> ### 3.2. `ShopItemsSelectionPresenter.cs`
+> 
+> *   **Responsibility**: Logic for selecting and applying items to the character. 🎨 Interacting with services to unlock and color items. Storing the character's temporary state.
+> *   **Interface**: `IShopItemsSelectionPresenter.cs`
+> 
+> ### 3.3. `ShopPresenter.cs`
+> 
+> *   **Responsibility**: The new main Presenter, acting as an orchestrator. 🎶 It connects `ShopCellsPresenter` and `ShopItemsSelectionPresenter`, manages the overall logic for navigating categories (item packs), and controls the lifecycle of the entire shop.
+> *   **Interface**: `IShopPresenter.cs`
+> 
+> ### 3.4. `ShopInstaller.cs` and Dependency Injection 💉
+> 
+> *   **Responsibility**: This is the glue that holds everything together! In `ShopInstaller.cs`, using Zenject, all the new, independent components (`Presenters`, `Views`, `Services`, `Fabrics`) are bound to each other through their interfaces. This eliminates the need for manual object creation and allows for easy implementation swapping, which is critical for testing and flexibility.
+> 
+> ---
+> 
+> ## 4. 🎉 Refactoring Summary
+> 
+> As a result of the two-phase refactoring, the system was completely redesigned.
+> 
+> *   **Flexibility & Extensibility**: New functionality can now be added without fear of breaking existing code. Components can be easily replaced thanks to interfaces and centralized setup in the DI container.
+> *   **Testability**: Each Presenter can be tested in isolation by substituting its dependencies with mock objects in the DI container.
+> *   **Reusability**: Components (especially `Cells`, `LayoutManager`) can now be easily reused in other projects.
+> *   **Readability & Maintainability**: The code is cleaner, and each part of the system has a clearly defined area of responsibility, which significantly simplifies understanding and maintenance.
+> 
+> The slight increase in orchestration code is a justified price for a reliable, scalable, and professional architecture built with SOLID principles in mind. 💪
+> 
+> ## 5. 🤔 Compromises and Growth Points
+> **Single Responsibility Principle (SRP)**: In the final version, `ShopPresenter` still combines multiple roles (orchestration, navigation management). This was a conscious compromise to avoid over-complicating the architecture and causing a "class explosion." In the future, if more complex logic is added, this class could be further decomposed.
+> 
+> **Tests**: The architecture is primed for unit testing, but the tests themselves have not yet been written. This is the next growth point for improving the system's reliability.
+>
+> </details>
+
+---
+
+### 📈 Growth Points & Improvement Plan
+
+The project serves as a solid foundation, but like any system, it has potential for further improvement. Key areas for growth lie in optimizing the DI graph, implementing lazy initialization for services, and further refactoring utility code.
+
+> [!NOTE]
+> <details>
+>   <summary><strong>Show some of the potential improvements...</strong></summary>
+>
+>   <br>
+>
+>   *   **1. Refactor `ConfigsProxy`**
+>       *   **Observation:** The current implementation of `ConfigsProxy` provides static access to `ScriptableObject` configs, which is a form of a singleton.
+>       *   **Potential Risk:** This complicates unit testing for classes that depend on it, as substituting configs with mock objects becomes more difficult.
+>       *   **Improvement Plan:** Convert `ConfigsProxy` into a regular service (`IConfigService`) that is injected via DI. This will make dependencies explicit and simplify testing, fully aligning with clean architecture principles.
+>
+>   *   **2. Lazy Initialization of Services**
+>       *   **Observation:** Most global services are initialized at the application start in `BootState`.
+>       *   **Potential Risk:** In a truly large game, this could increase the initial loading time and memory consumption.
+>       *   **Improvement Plan:** Introduce factories or `Lazy<>` wrappers for services that are not needed at the start (e.g., gameplay-related services). This will allow them to be initialized only when they are actually needed (e.g., upon entering `GamePlayState`).
+>
+>   *   **3. Improve Folder Structure**
+>       *   **Observation:** The current folder hierarchy is functional but could be more strictly organized.
+>       *   **Potential Risk:** On a large team, this could lead to inconsistencies and slow down the process of finding necessary assets and scripts.
+>       *   **Improvement Plan:** Reorganize the structure according to the "Feature Slices" principle, where all code, prefabs, and assets related to a single feature (e.g., "Customization") are located in one folder. This will improve navigation and encapsulation.
+>
+>   *   **4. Refactor Utility Code**
+>       *   **Observation:** Some utility classes (e.g., `AuxiliaryFunc.cs`) contain a large number of extension methods, some of which were generated with AI assistance.
+>       *   **Potential Risk:** This can lead to class bloat and make maintenance more complex.
+>       *   **Improvement Plan:** Split the monolithic utility class into several smaller, more focused classes (e.g., `VectorExtensions`, `UIAnimationExtensions`, `MathExtensions`), so that each is responsible for its own clearly defined domain.
+>
+>   *   **5. Implement Unit Test Coverage**
+>       *   **Observation:** The architecture (DI, interfaces, FSM) is fully prepared for unit testing, but the tests themselves have not yet been written.
+>       *   **Potential Risk:** The absence of tests increases the risk of regression bugs when adding new functionality.
+>       *   **Improvement Plan:** Write a suite of unit tests for key services (e.g., `CurrenciesService`, `PaintAccuracyService`) to guarantee their correct functionality and enhance the overall stability of the project.
+>
+> </details>
+
+---
+<h3 align="center">Thanks for your attention! Contact me:</h3>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/finerace/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white&labelColor=0A66C2&color=0077B5" alt="LinkedIn"/>
+  </a>
+  <a href="https://t.me/finerace" target="_blank">
+    <img src="https://img.shields.io/badge/Telegram-26A5E4?style=flat-square&logo=telegram&logoColor=white&labelColor=26A5E4&color=2CA5E0" alt="Telegram"/>
+  </a>
+</p>
