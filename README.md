@@ -1,6 +1,23 @@
 <p align="center">
   <img src="docs/images/logo.png" width="450" alt="Artist's Simulator Logo">
 </p>
+
+<h3 align="center">Привет! Я FineRace, и это — мой флагманский проект-портфолио.</h3>
+
+<p align="center">
+  <a href="https://play.google.com/store/apps/details?id=com.bloopbe.artistssimulator" target="_blank">
+    <img src="https://img.shields.io/badge/Google Play-000000?style=flat-square&logo=google-play&logoColor=white&labelColor=414141&color=black" alt="Google Play"/>
+  </a>
+  <a href="https://www.linkedin.com/in/finerace/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white&labelColor=0A66C2&color=0077B5" alt="LinkedIn"/>
+  </a>
+  <a href="https://t.me/finerace" target="_blank">
+    <img src="https://img.shields.io/badge/Telegram-26A5E4?style=flat-square&logo=telegram&logoColor=white&labelColor=26A5E4&color=2CA5E0" alt="Telegram"/>
+  </a>
+</p>
+
+---
+
 <p align="center">
   <img src="docs/gif/gif (1).gif" width="400" alt="Gameplay Demo">
   <img src="docs/gif/gif (2).gif" width="400" alt="Character Customization">
@@ -331,4 +348,17 @@
 >       *   **План улучшения:** Написать набор юнит-тестов для ключевых сервисов (например, `CurrenciesService`, `PaintAccuracyService`), чтобы гарантировать их корректную работу и повысить общую стабильность проекта.
 >
 > </details>
+
+---
+<h3 align="center">Спасибо за внимание!! Связь:</h3>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/finerace/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white&labelColor=0A66C2&color=0077B5" alt="LinkedIn"/>
+  </a>
+  <a href="https://t.me/finerace" target="_blank">
+    <img src="https://img.shields.io/badge/Telegram-26A5E4?style=flat-square&logo=telegram&logoColor=white&labelColor=26A5E4&color=2CA5E0" alt="Telegram"/>
+  </a>
+</p>
+
 
