@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="docs/images/logo.png" width="400" alt="Artist's Simulator Logo">
+  <img src="docs/images/logo.png" width="540" alt="Artist's Simulator Logo">
 </p>
 <p align="center">
-  <img src="docs/images/gameplay.gif" width="280" alt="Gameplay Demo">
-  <img src="docs/images/customization.gif" width="280" alt="Character Customization">
-  <img src="docs/images/ui_animation.gif" width="280" alt="UI Animation">
+  <img src="docs/gif/gif (1).gif" width="540" alt="Gameplay Demo">
+  <img src="docs/gif/gif (2).gif" width="540" alt="Character Customization">
+  <img src="docs/gif/gif (3).gif" width="540" alt="UI Animation">
 </p>
 
 ---
@@ -26,6 +26,14 @@
 >   *   **🎯 Цель проекта:** Создать "залипательную" мобильную игру на базе профессиональной, data-driven архитектуры. Проект является практической реализацией принципов SOLID, KISS, YAGNI и т.д, нацеленной на долгосрочную поддержку и дешёвое добавление нового контента.
 >
 > </details>
+
+---
+
+<p align="center">
+  <img src="docs/gif/gif (4).gif" width="540" alt="Gameplay Demo">
+  <img src="docs/gif/gif (5).gif" width="540" alt="Character Customization">
+  <img src="docs/gif/gif (6).gif" width="540" alt="UI Animation">
+</p>
 
 ---
 
