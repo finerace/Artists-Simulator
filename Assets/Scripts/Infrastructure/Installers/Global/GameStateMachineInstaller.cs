@@ -18,7 +18,6 @@ namespace Game.Infrastructure.Installers.Global
             Container.Bind<BootState>().AsSingle();
             Container.Bind<MainMenuState>().AsSingle();
             
-            // Вместо привязки GamePlayState добавляем привязки для конкретных реализаций
             Container.Bind<LightGamePlayState>().AsSingle();
             Container.Bind<HardGamePlayState>().AsSingle();
         }
