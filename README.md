@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="docs/images/logo.png" width="540" alt="Artist's Simulator Logo">
+  <img src="docs/images/logo.png" width="450" alt="Artist's Simulator Logo">
 </p>
 <p align="center">
-  <img src="docs/gif/gif (1).gif" width="540" alt="Gameplay Demo">
-  <img src="docs/gif/gif (2).gif" width="540" alt="Character Customization">
-  <img src="docs/gif/gif (3).gif" width="540" alt="UI Animation">
+  <img src="docs/gif/gif (1).gif" width="250" alt="Gameplay Demo">
+  <img src="docs/gif/gif (2).gif" width="250" alt="Character Customization">
+  <img src="docs/gif/gif (3).gif" width="250" alt="UI Animation">
 </p>
 
 ---
@@ -30,9 +30,9 @@
 ---
 
 <p align="center">
-  <img src="docs/gif/gif (4).gif" width="540" alt="Gameplay Demo">
-  <img src="docs/gif/gif (5).gif" width="540" alt="Character Customization">
-  <img src="docs/gif/gif (6).gif" width="540" alt="UI Animation">
+  <img src="docs/gif/gif (4).gif" width="250" alt="Gameplay Demo">
+  <img src="docs/gif/gif (5).gif" width="250" alt="Character Customization">
+  <img src="docs/gif/gif (6).gif" width="250" alt="UI Animation">
 </p>
 
 ---
