@@ -32,7 +32,7 @@
 
 ### 💡 О проекте
 
-"Artist's Simulator" — это соревновательная игра про рисование на скорость с глубокой кастомизацией персонажа и локации. Проект построен на гибкой data-driven архитектуре (SOLID, DI, FSM), созданной для долгосрочной поддержки и дешёвого добавления нового контента.
+"Artist's Simulator" — это соревновательная игра про рисование на скорость с глубокой кастомизацией персонажа и локации. Проект построен на гибкой data-driven архитектуре (SOLID, DI, FSM), созданной для долгосрочной поддержки и дешёвого добавления нового контента. На практике это означает, что гейм-дизайнер может самостоятельно настраивать баланс и добавлять предметы через конфиги, не отвлекая программиста и ускоряя процесс итераций.
 
 > [!NOTE]
 > <details>
@@ -87,7 +87,7 @@
 >
 >   *   **Шаг 3 (Представление):** Создается UI-префаб и новое состояние `DailyQuestUIState` для `UIStateMachine`. Это состояние инициализирует меню. Доступ к `QuestDataService` получает `QuestsMenuObserver` при создании префаба меню через `.InjectGameObject` в сервисе `IAssetsService`. `QuestsMenuObserver` отображает текущие квесты и их прогресс.
 >
->   **✨ Результат:** Новая система полностью модульна. Логика проверки отделена от данных и представления. Новые типы квестов добавляются простым созданием новой "стратегии", не затрагивая существующий код.
+>   **✨ Результат:** Новая система полностью модульна. Логика проверки отделена от данных и представления. Новые типы квестов добавляются простым созданием новой "стратегии", не затрагивая существующий код. Для команды это означает, что добавление нового типа квестов — это предсказуемая задача, которую можно оценить в часах, а не днях, и она не несет в себе риска сломать стабильно работающие части игры.
 >
 >
 > </details>
@@ -305,6 +305,7 @@
 > *   **Переиспользуемость**: Компоненты (особенно `Cells`, `LayoutManager`) теперь можно легко использовать в других проектах.
 > *   **Читаемость и поддержка**: Код стал чище, а каждая часть системы имеет чётко определённую зону ответственности, что значительно упрощает его понимание и поддержку.
 > 
+> Таким образом, время, изначально вложенное в рефакторинг, многократно окупается за счет радикального снижения стоимости поддержки и ускорения разработки нового функционала для магазина.
 > Небольшое увеличение количества кода оркестрации — это оправданная цена за надёжную, масштабируемую и профессиональную архитектуру, построенную с учётом принципов SOLID. 💪
 > 
 > 
@@ -417,7 +418,7 @@
 
 ### 💡 About the Project
 
-"Artist's Simulator" is a competitive speed-painting game featuring deep character and location customization. The project is built on a flexible, data-driven architecture (SOLID, DI, FSM) designed for long-term support and cost-effective content updates.
+"Artist's Simulator" is a competitive speed-painting game featuring deep character and location customization. The project is built on a flexible, data-driven architecture (SOLID, DI, FSM) designed for long-term support and cost-effective content updates. In practice, this means a game designer can independently adjust the balance and add new items using configs, freeing up programmers and significantly speeding up the iteration cycle.
 
 > [!NOTE]
 > <details>
@@ -472,7 +473,7 @@ The project's core is a combination of **DI (Zenject)**, **FSM**, and services, 
 >
 >   *   **Step 3 (Presentation):** A UI prefab and a new `DailyQuestUIState` are created for the `UIStateMachine`. This state initializes the menu. A `QuestsMenuObserver` gains access to `QuestDataService` when the menu prefab is instantiated via `.InjectGameObject` in the `IAssetsService`. The `QuestsMenuObserver` then displays the current quests and their progress.
 >
->   **✨ Result:** The new system is completely modular. The validation logic is decoupled from the data and the presentation layers. New quest types can be added simply by creating a new "strategy" without touching any existing code.
+>   **✨ Result:** The new system is completely modular. The validation logic is decoupled from the data and the presentation layers. New quest types can be added simply by creating a new "strategy" without touching any existing code. For the team, this translates to a predictable task that can be estimated in hours instead of days, with minimal risk of introducing regressions to stable parts of the game.
 >
 >
 > </details>
@@ -689,7 +690,8 @@ The project's monolithic character customization shop UI was completely overhaul
 > *   **Testability**: Each Presenter can be tested in isolation by substituting its dependencies with mock objects in the DI container.
 > *   **Reusability**: Components (especially `Cells`, `LayoutManager`) can now be easily reused in other projects.
 > *   **Readability & Maintainability**: The code is cleaner, and each part of the system has a clearly defined area of responsibility, which significantly simplifies understanding and maintenance.
-> 
+>
+> The initial time invested in this refactoring delivers a strong return (ROI) by drastically reducing the long-term cost of maintenance and accelerating the development of new shop features. 
 > The slight increase in orchestration code is a justified price for a reliable, scalable, and professional architecture built with SOLID principles in mind. 💪
 > 
 > ## 5. 🤔 Compromises and Growth Points
