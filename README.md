@@ -32,7 +32,9 @@
 
 ### 💡 О проекте
 
-"Artist's Simulator" — это соревновательная игра про рисование на скорость с глубокой кастомизацией персонажа и локации. Проект построен на гибкой data-driven архитектуре (SOLID, DI, FSM), созданной для долгосрочной поддержки и дешёвого добавления нового контента. На практике это означает, что гейм-дизайнер может самостоятельно настраивать баланс и добавлять предметы через конфиги, не отвлекая программиста и ускоряя процесс итераций.
+"Artist's Simulator" — это соревновательная игра про рисование на скорость с глубокой кастомизацией персонажа и локации. Проект построен на гибкой data-driven архитектуре (SOLID, DI, FSM), созданной для долгосрочной поддержки и дешёвого добавления нового контента. 
+
+На практике это означает, что гейм-дизайнер может самостоятельно настраивать баланс и добавлять предметы через конфиги, не отвлекая программиста и ускоряя процесс итераций.
 
 > [!NOTE]
 > <details>
@@ -418,7 +420,9 @@
 
 ### 💡 About the Project
 
-"Artist's Simulator" is a competitive speed-painting game featuring deep character and location customization. The project is built on a flexible, data-driven architecture (SOLID, DI, FSM) designed for long-term support and cost-effective content updates. In practice, this means a game designer can independently adjust the balance and add new items using configs, freeing up programmers and significantly speeding up the iteration cycle.
+"Artist's Simulator" is a competitive speed-painting game featuring deep character and location customization. The project is built on a flexible, data-driven architecture (SOLID, DI, FSM) designed for long-term support and cost-effective content updates. 
+
+In practice, this means a game designer can independently adjust the balance and add new items using configs, freeing up programmers and significantly speeding up the iteration cycle.
 
 > [!NOTE]
 > <details>
