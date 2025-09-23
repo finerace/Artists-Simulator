@@ -30,6 +30,19 @@
 
 ---
 
+### TL;DR
+- 📱 Выпустил полноценную мобильную игру на **Google Play** (Unity, 2025).
+- 🎨 Геймплей: **рисование в реальном времени** на Texture2D с AI-соперниками и **кастомным шейдером**, который делает картинку плавной и привлекательной даже при низком числе пикселей.
+- 🛠️ Чистая архитектура: **Zenject (DI), FSM, SOLID, KISS, YAGNI, Addressables, асинхронное ядро**.
+- 🛒 Рефакторинг внутриигрового магазина на **MVP + DI** → быстрее внедряются новые фичи, дешевле поддержка в долгосрочной перспективе.
+- ✨ С помощью собственного Unity-плагина AOP сократил количество бойлерплейт-кода примерно на ~60%.
+- 🧩 Создал большое количество **модульных переиспользуемых систем и сервисов**.
+- 🎭 Гибкая **data-driven архитектура кастомизации персонажей** ускоряет добавление новых персонажей на ~75% и без участия программиста.
+- 🚀 Оптимизация: ускорил операции с текстурами примерно на ~40%, снизил пиковое потребление памяти.
+- 📈 Архитектура готова к юнит-тестам и масштабированию.
+
+---
+
 ### 💡 О проекте
 
 "Artist's Simulator" — это соревновательная игра про рисование на скорость с глубокой кастомизацией персонажа и локации. Проект построен на гибкой data-driven архитектуре (SOLID, DI, FSM), созданной для долгосрочной поддержки и дешёвого добавления нового контента. 
@@ -415,6 +428,19 @@
   <img src="docs/gif/gif (1).gif" width="400" alt="Gameplay Demo">
   <img src="docs/gif/gif (2).gif" width="400" alt="Character Customization">
 </p>
+
+---
+
+### TL;DR
+- 📱 Released a full mobile game on **Google Play** (Unity, 2025).
+- 🎨 Core gameplay: **real-time drawing mechanics** on Texture2D with AI opponents and a **custom shader** for smooth visuals, even with low pixel counts.
+- 🛠️ Clean architecture: **Zenject (DI), FSM, SOLID, async core**.
+- 🛒 Refactored in-game store using **MVP + DI** → faster feature delivery and cheaper long-term maintenance.
+- ✨ Reduced boilerplate code by ~60% using my own AOP Unity plugin.
+- 🧩 Built a large set of **modular, reusable systems and services**.
+- 🎭 Flexible **data-driven character customization** system → +75% faster to add new characters, no programmer involvement required.
+- 🚀 Optimizations: improved texture operations performance by ~40%, reduced peak memory usage significantly.
+- 📈 Architecture prepared for unit testing and future scaling.
 
 ---
 
