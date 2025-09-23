@@ -368,6 +368,11 @@
 >       *   **Потенциальный риск:** Отсутствие тестов повышает риск регрессионных ошибок при добавлении нового функционала.
 >       *   **План улучшения:** Написать набор юнит-тестов для ключевых сервисов (например, `CurrenciesService`, `PaintAccuracyService`), чтобы гарантировать их корректную работу и повысить общую стабильность проекта.
 >
+>   *   **6. Разделение UI-состояний и Игровой логики**
+>   *   **Наблюдение:** В текущей реализации состояние магазина (`CharacterCustomisationMenuUIState.cs`) в `UIStateMachine` не только управляет отображением UI, но и выступает оркестратором для бизнес-логики покупок.
+>   *   **Потенциальный риск:** Это является небольшим нарушением Принципа единственной ответственности, так как `UIStateMachine` начинает знать о геймплейной логике. В более крупном проекте это может привести к усложнению FSM.
+>   *   **План улучшения:** В следующей итерации можно было бы вынести управление логикой магазина в более высоко-ровневый `GameStateMachine`. Его состояние отвечало бы за активацию логики, а `UIStateMachine` получал бы от него лишь команду "показать/скрыть UI магазина". Это обеспечило бы полное разделение логики и представления на уровне состояний.
+>
 > </details>
 
 ---
@@ -768,6 +773,10 @@ The project serves as a solid foundation, but like any system, it has potential 
 >       *   **Potential Risk:** The absence of tests increases the risk of regression bugs when adding new functionality.
 >       *   **Improvement Plan:** Write a suite of unit tests for key services (e.g., `CurrenciesService`, `PaintAccuracyService`) to guarantee their correct functionality and enhance the overall stability of the project.
 >
+>   *   **6. Decoupling UI State from Game Logic**
+>   *   **Observation:** In the current implementation, the shop state (`CharacterCustomisationMenuUIState.cs`) within the `UIStateMachine` not only manages the UI display but also orchestrates the business logic for purchases.
+>   *   **Potential Risk:** This is a minor violation of the Single Responsibility Principle, as the `UIStateMachine` becomes aware of gameplay logic. In a larger project, this could lead to the FSM becoming overly complex.
+>   *   **Improvement Plan:** In a future iteration, the control of the shop's logic could be moved to the higher-level `GameStateMachine`. Its corresponding state would be responsible for activating the logic, while the `UIStateMachine` would only receive a command from it to "show/hide the shop UI". This would ensure a complete separation of logic and presentation at the state level.
 > </details>
 
 ---
