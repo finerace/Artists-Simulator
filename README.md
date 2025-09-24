@@ -1,6 +1,8 @@
 <p align="right">
   <img src="https://flagpedia.net/data/flags/w20/gb.png" width="20" alt="English">
   <a href="#-english-version"> English Version</a>
+  <a href="https://github.com/FineRace">
+  <img src="https://i.postimg.cc/nzjMnxmF/mini-icon.png" width="30" alt="icon" align="left">
 </p>
 
 <p align="center">
@@ -407,6 +409,8 @@
 <p align="right">
   <img src="https://flagpedia.net/data/flags/w20/ru.png" width="20" alt="Русский">
   <a href="#привет-я-finerace-и-это--мой-флагманский-проект-портфолио">Русская версия</a>
+  <a href="https://github.com/FineRace">
+  <img src="https://i.postimg.cc/nzjMnxmF/mini-icon.png" width="30" alt="icon" align="left">
 </p>
 
 <p align="center">
