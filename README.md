@@ -41,7 +41,7 @@
 - 🧩 Создал большое количество **модульных переиспользуемых систем и сервисов**.
 - 🎭 Гибкая **data-driven архитектура кастомизации персонажей** ускоряет добавление новых персонажей на ~75% и без участия программиста.
 - 🚀 Оптимизация: ускорил операции с текстурами примерно на ~40%, снизил пиковое потребление памяти.
-- 📈 Архитектура готова к юнит-тестам и масштабированию.
+- 🤖 AI-Augmented Development: Внедрил AI-инструменты (Cursor IDE, Copilot) в рабочий процесс для ускорения прототипирования и сложного рефакторинга, что повысило общую скорость разработки на ~40-50%.
 
 ---
 
@@ -449,7 +449,7 @@
 - 🧩 Built a large set of **modular, reusable systems and services**.
 - 🎭 Flexible **data-driven character customization** system → +75% faster to add new characters, no programmer involvement required.
 - 🚀 Optimizations: improved texture operations performance by ~40%, reduced peak memory usage significantly.
-- 📈 Architecture prepared for unit testing and future scaling.
+- 🤖 AI-Augmented Development: Boosted development speed by ~40-50% by integrating AI tools (Cursor IDE, Copilot) to accelerate prototyping and complex refactoring.
 
 ---
 
