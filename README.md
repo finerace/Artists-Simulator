@@ -40,7 +40,7 @@
 - ✨ С помощью собственного Unity-плагина AOP сократил количество бойлерплейт-кода примерно на ~60%.
 - 🧩 Создал большое количество **модульных переиспользуемых систем и сервисов**.
 - 🎭 Гибкая **data-driven архитектура кастомизации персонажей** ускоряет добавление новых персонажей на ~75% и без участия программиста.
-- 🚀 Оптимизация: ускорил операции с текстурами примерно на ~40%, снизил пиковое потребление памяти.
+- 🚀 Оптимизация: ускорил операции с ключевой текстурой примерно на ~35%.
 - 🤖 AI-Augmented Development: Внедрил AI-инструменты (Cursor IDE, Copilot) в рабочий процесс для ускорения прототипирования и сложного рефакторинга, что повысило общую скорость разработки на ~40-50%.
 
 ---
@@ -448,7 +448,7 @@
 - ✨ Reduced boilerplate code by ~60% using my own AOP Unity plugin.
 - 🧩 Built a large set of **modular, reusable systems and services**.
 - 🎭 Flexible **data-driven character customization** system → +75% faster to add new characters, no programmer involvement required.
-- 🚀 Optimizations: improved texture operations performance by ~40%, reduced peak memory usage significantly.
+- 🚀 Optimizations: improved key-texture operations performance by ~35%.
 - 🤖 AI-Augmented Development: Boosted development speed by ~40-50% by integrating AI tools (Cursor IDE, Copilot) to accelerate prototyping and complex refactoring.
 
 ---
