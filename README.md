@@ -327,9 +327,12 @@
 > 
 > 
 > ## 5. 🤔 Компромиссы и Точки Роста
-> Принцип Единственной Ответственности (SRP): В финальной версии ShopPresenter все еще совмещает несколько ролей (оркестрация, управление навигацией). Это было осознанным компромиссом, чтобы избежать излишнего усложнения архитектуры и "взрыва классов". В будущем, при добавлении более сложной логики, этот класс может быть дополнительно декомпозирован.
-> 
-> Тесты: Архитектура подготовлена для юнит-тестирования, однако сами тесты еще не написаны. Это является следующей точкой роста для повышения надежности системы.
+> * **Принцип Единственной Ответственности (SRP)**: В финальной версии ShopPresenter все еще совмещает несколько ролей (оркестрация, управление навигацией). Это было осознанным компромиссом, чтобы избежать излишнего усложнения архитектуры и "взрыва классов". В будущем, при добавлении более сложной логики, этот класс может быть дополнительно декомпозирован.
+>
+> * В процессе я столкнулся с тем, что Presenter'ы всё равно вышли довольно большими, и содержат лишнюю там логику подготовки данных для View. Ретроспективно смотря на эту проблему я понимаю, что в данном случае тут лучше бы подошёл MVVM паттерн, пусть UI бы реагировал на чистые данные без каких-либо лишних заморочек и слияния с бизнес-логикой, с этим подходом можно бы было гораздо проще разделить бизнес-логику UI, и что самое главное, полностью отделить её от представления. Это был бы более чистый, а следовательно правильны подход.
+>
+> * **Тесты**: Архитектура подготовлена для юнит-тестирования, однако сами тесты еще не написаны. Это является следующей точкой роста для повышения надежности системы.
+>
 >
 > </details>
 
@@ -734,9 +737,11 @@ The project's monolithic character customization shop UI was completely overhaul
 > The slight increase in orchestration code is a justified price for a reliable, scalable, and professional architecture built with SOLID principles in mind. 💪
 > 
 > ## 5. 🤔 Compromises and Growth Points
-> **Single Responsibility Principle (SRP)**: In the final version, `ShopPresenter` still combines multiple roles (orchestration, navigation management). This was a conscious compromise to avoid over-complicating the architecture and causing a "class explosion." In the future, if more complex logic is added, this class could be further decomposed.
+> * **Single Responsibility Principle (SRP)**: In the final version, `ShopPresenter` still combines multiple roles (orchestration, navigation management). This was a conscious compromise to avoid over-complicating the architecture and causing a "class explosion." In the future, if more complex logic is added, this class could be further decomposed.
 > 
-> **Tests**: The architecture is primed for unit testing, but the tests themselves have not yet been written. This is the next growth point for improving the system's reliability.
+> * During the process, I found that the Presenters still turned out to be quite large, containing unnecessary logic for preparing data for the View. Looking back at this problem in retrospect, I realize that the MVVM pattern would have been a better fit here. It would have allowed the UI to react to clean data without any extra complexities or merging with business logic. With that approach, it would have been much easier to separate the UI's business logic and, most importantly, completely decouple it from the presentation. It would have been a cleaner, and therefore, a more correct approach.
+>
+> * **Tests**: The architecture is primed for unit testing, but the tests themselves have not yet been written. This is the next growth point for improving the system's reliability.
 >
 > </details>
 
