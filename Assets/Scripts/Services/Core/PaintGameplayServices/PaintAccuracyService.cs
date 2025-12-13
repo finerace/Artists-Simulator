@@ -8,7 +8,8 @@ using Game.Services.Common.Logging;
 
 namespace Game.Services.Core
 {
-    //TODO: decomposing!!!
+    // TODO: [Technical Debt] DECOMPOSING!!!! High cognitive complexity & SRP violation.
+    // Current status: Monolithic logic for prototyping speed.
     
     public class PaintAccuracyService : IFixedTickable
     {
