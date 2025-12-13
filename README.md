@@ -353,27 +353,32 @@
 >       *   **Потенциальный риск:** Это усложняет юнит-тестирование классов, которые от него зависят, так как подменить конфиги на mock-объекты становится сложнее.
 >       *   **План улучшения:** Перевести `ConfigsProxy` в разряд обычного сервиса (`IConfigService`), который будет внедряться через DI. Это сделает зависимости явными и упростит тестирование, полностью соответствуя принципам чистой архитектуры.
 >
->   *   **2. Ленивая инициализация сервисов (Lazy Initialization)**
+>   *   **2. Устранение Технического Долга (Decomposition & Separation of Concerns)**
+>       *   **Наблюдение:** В проекте присутствуют участки легаси-кода, требующие рефакторинга. Некоторые классы (например, `PaintAccuracyService`, `PathGenerationService`) нарушают принцип SRP, смешивая сложную бизнес-логику, расчеты и прямое управление представлением (View/Transform).
+>       *   **Потенциальный риск:** Высокая связность (High Coupling) и сложность (Cognitive Complexity) таких классов затрудняют их поддержку, расширение и покрытие юнит-тестами.
+>       *   **План улучшения:** Декомпозировать "тяжелые" сервисы, выделив алгоритмы и расчеты в отдельные независимые классы (Стратегии/Провайдеры). Строго разграничить слои: полностью убрать работу с Unity API (позиционирование, физика) из слоя Сервисов, делегировав это специализированным View-контроллерам.
+>  
+>   *   **3. Ленивая инициализация сервисов (Lazy Initialization)**
 >       *   **Наблюдение:** Большинство глобальных сервисов инициализируются на старте приложения в `BootState`.
 >       *   **Потенциальный риск:** В действительно большой игре это может увеличить время первоначальной загрузки и начальное потребление памяти.
 >       *   **План улучшения:** Внедрить фабрики или `Lazy<>` обертки для сервисов, которые не требуются на старте (например, геймплейные). Это позволит инициализировать их только в тот момент, когда они действительно понадобятся (например, при входе в `GamePlayState`).
 >
->   *   **3. Улучшение структуры папок**
+>   *   **4. Улучшение структуры папок**
 >       *   **Наблюдение:** Текущая иерархия папок функциональна, но могла бы быть строже структурирована.
 >       *   **Потенциальный риск:** В большой команде это может привести к разночтениям и замедлить поиск нужных ассетов и скриптов.
 >       *   **План улучшения:** Реорганизовать структуру по принципу "Feature Slices" (группировка по фичам), где весь код, префабы и ассеты, относящиеся к одной фиче (например, "Кастомизация"), лежат в одной папке. Это повысит навигацию и инкапсуляцию.
 >
->   *   **4. Рефакторинг утилитного кода**
+>   *   **5. Рефакторинг утилитного кода**
 >       *   **Наблюдение:** Некоторые утилитные классы (например, `AuxiliaryFunc.cs`) содержат большое количество методов-расширений, часть из которых была сгенерирована с помощью ИИ.
 >       *   **Потенциальный риск:** Это может привести к "раздуванию" класса и усложнению его поддержки.
 >       *   **План улучшения:** Разделить монолитный утилитный класс на несколько более мелких и сфокусированных (например, `VectorExtensions`, `UIAnimationExtensions`, `MathExtensions`), чтобы каждый отвечал за свою, четко определенную зону ответственности.
 >
->   *   **5. Покрытие юнит-тестами**
+>   *   **6. Покрытие юнит-тестами**
 >       *   **Наблюдение:** Архитектура (DI, интерфейсы, FSM) полностью подготовлена для юнит-тестирования, но сами тесты еще не написаны.
 >       *   **Потенциальный риск:** Отсутствие тестов повышает риск регрессионных ошибок при добавлении нового функционала.
 >       *   **План улучшения:** Написать набор юнит-тестов для ключевых сервисов (например, `CurrenciesService`, `PaintAccuracyService`), чтобы гарантировать их корректную работу и повысить общую стабильность проекта.
 >
->   *   **6. Разделение UI-состояний и Игровой логики**
+>   *   **7. Разделение UI-состояний и Игровой логики**
 >   *   **Наблюдение:** В текущей реализации состояние магазина (`CharacterCustomisationMenuUIState.cs`) в `UIStateMachine` не только управляет отображением UI, но и выступает оркестратором для бизнес-логики покупок.
 >   *   **Потенциальный риск:** Это является небольшим нарушением Принципа единственной ответственности, так как `UIStateMachine` начинает знать о геймплейной логике. В более крупном проекте это может привести к усложнению FSM.
 >   *   **План улучшения:** В следующей итерации можно было бы вынести управление логикой магазина в более высоко-ровневый `GameStateMachine`. Его состояние отвечало бы за активацию логики, а `UIStateMachine` получал бы от него лишь команду "показать/скрыть UI магазина". Это обеспечило бы полное разделение логики и представления на уровне состояний.
@@ -762,27 +767,34 @@ The project serves as a solid foundation, but like any system, it has potential 
 >       *   **Potential Risk:** This complicates unit testing for classes that depend on it, as substituting configs with mock objects becomes more difficult.
 >       *   **Improvement Plan:** Convert `ConfigsProxy` into a regular service (`IConfigService`) that is injected via DI. This will make dependencies explicit and simplify testing, fully aligning with clean architecture principles.
 >
->   *   **2. Lazy Initialization of Services**
+>   *   **2. Technical Debt Reduction (Decomposition & Separation of Concerns)**
+>       *   **Observation:** The project contains legacy code areas requiring refactoring. Certain classes (e.g., `PaintAccuracyService`, `PathGenerationService`) violate SRP by mixing complex business logic, calculations, and direct View/Transform manipulation.
+>       *   **Potential Risk:** The High Coupling and Cognitive Complexity of these classes make them difficult to maintain, extend, and cover with unit tests.
+>       *   **Improvement Plan:** 
+>           1.  Decompose "heavy" services by extracting algorithms and calculations into separate independent classes (Strategies/Providers).
+>           2.  Enforce strict layer separation: completely remove Unity API interactions (positioning, physics) from the Service layer, delegating these tasks to specialized View controllers.
+>
+>   *   **3. Lazy Initialization of Services**
 >       *   **Observation:** Most global services are initialized at the application start in `BootState`.
 >       *   **Potential Risk:** In a truly large game, this could increase the initial loading time and memory consumption.
 >       *   **Improvement Plan:** Introduce factories or `Lazy<>` wrappers for services that are not needed at the start (e.g., gameplay-related services). This will allow them to be initialized only when they are actually needed (e.g., upon entering `GamePlayState`).
 >
->   *   **3. Improve Folder Structure**
+>   *   **4. Improve Folder Structure**
 >       *   **Observation:** The current folder hierarchy is functional but could be more strictly organized.
 >       *   **Potential Risk:** On a large team, this could lead to inconsistencies and slow down the process of finding necessary assets and scripts.
 >       *   **Improvement Plan:** Reorganize the structure according to the "Feature Slices" principle, where all code, prefabs, and assets related to a single feature (e.g., "Customization") are located in one folder. This will improve navigation and encapsulation.
 >
->   *   **4. Refactor Utility Code**
+>   *   **5. Refactor Utility Code**
 >       *   **Observation:** Some utility classes (e.g., `AuxiliaryFunc.cs`) contain a large number of extension methods, some of which were generated with AI assistance.
 >       *   **Potential Risk:** This can lead to class bloat and make maintenance more complex.
 >       *   **Improvement Plan:** Split the monolithic utility class into several smaller, more focused classes (e.g., `VectorExtensions`, `UIAnimationExtensions`, `MathExtensions`), so that each is responsible for its own clearly defined domain.
 >
->   *   **5. Implement Unit Test Coverage**
+>   *   **6. Implement Unit Test Coverage**
 >       *   **Observation:** The architecture (DI, interfaces, FSM) is fully prepared for unit testing, but the tests themselves have not yet been written.
 >       *   **Potential Risk:** The absence of tests increases the risk of regression bugs when adding new functionality.
 >       *   **Improvement Plan:** Write a suite of unit tests for key services (e.g., `CurrenciesService`, `PaintAccuracyService`) to guarantee their correct functionality and enhance the overall stability of the project.
 >
->   *   **6. Decoupling UI State from Game Logic**
+>   *   **7. Decoupling UI State from Game Logic**
 >   *   **Observation:** In the current implementation, the shop state (`CharacterCustomisationMenuUIState.cs`) within the `UIStateMachine` not only manages the UI display but also orchestrates the business logic for purchases.
 >   *   **Potential Risk:** This is a minor violation of the Single Responsibility Principle, as the `UIStateMachine` becomes aware of gameplay logic. In a larger project, this could lead to the FSM becoming overly complex.
 >   *   **Improvement Plan:** In a future iteration, the control of the shop's logic could be moved to the higher-level `GameStateMachine`. Its corresponding state would be responsible for activating the logic, while the `UIStateMachine` would only receive a command from it to "show/hide the shop UI". This would ensure a complete separation of logic and presentation at the state level.
