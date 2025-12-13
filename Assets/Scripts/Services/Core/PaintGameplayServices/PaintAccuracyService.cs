@@ -8,6 +8,7 @@ using Game.Services.Common.Logging;
 
 namespace Game.Services.Core
 {
+    //TODO: decomposing!!!
     
     public class PaintAccuracyService : IFixedTickable
     {
